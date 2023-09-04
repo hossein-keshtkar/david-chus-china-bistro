@@ -1,109 +1,48 @@
-import React, { useEffect, useState } from "react";
-import { Container, Navbar, Collapse } from "react-bootstrap";
+import React from "react";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
 import logo from "../assets/images/restaurant-logo_medium.png";
 import logoLg from "../assets/images/restaurant-logo_large.png";
 import star from "../assets/images/star-k-logo.png";
 import styles from "../styles/Navbar.module.css";
-import { RESIZE } from "../constants/keywords";
 
 const MyNavbar = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const resizeHanler = () => {
-    const winWidth = window.innerWidth;
-
-    winWidth > 992 ? setIsExpanded(true) : setIsExpanded(false);
-  };
-
-  useEffect(() => {
-    resizeHanler();
-
-    window.addEventListener(RESIZE, resizeHanler);
-
-    return () => window.removeEventListener(RESIZE, resizeHanler);
-  }, []);
-
   return (
-    <Navbar
-      className={`${styles.Navbar} navbar navbar-expand-lg`}
-      aria-controls="brand-name"
-      aria-expanded={isExpanded}
-      expand="lg"
-    >
+    <Navbar expand="lg" className={styles.Navbar}>
       <Container>
-        <div className="d-flex flex-row">
-          <Navbar.Brand className="collapse navbar-collapse" id="brand-name">
-            <a className="nav-link" href="#brand">
-              <img
-                src={logoLg}
-                srcSet={`${logo} 1080w, ${logoLg} 1440w`}
-                sizes="(max-width: 1080px) 100vw, 1440px"
-                alt="logo"
-                className="pull-left visible-md visible-lg"
-              />
-            </a>
-          </Navbar.Brand>
-
-          <div className="navbar-text">
-            <h2 className={`${styles.navbarHeader} navbar-header h2`}>
-              DAVID CHU'S CHINA BISTRO
-            </h2>
-            <div className="d-flex flex-row align-items-center">
-              <span className="me-2 navbar-header">
-                <img src={star} alt="start-k-logo" />
-              </span>
-              KOSHER CERTIFIED
+        <Navbar.Brand href="#" className="d-flex flex-row">
+          <img
+            src={logo}
+            srcSet={`${logo} 1080w, ${logoLg} 1440w`}
+            sizes="(max-width: 1080px) 100vw, 1440px"
+            alt="brand-logo"
+            className="collapse navbar-collapse me-2"
+          />
+          <div className="d-flex flex-column justify-content-center">
+            <h1>DAVID CHU'S CHINA BISTRO</h1>
+            <div>
+              <img src={star} alt="start-k-logo" />
+              <span>KOSHER CERTIFIED</span>
             </div>
           </div>
-        </div>
-
-        <div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </div>
-
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto">
-            <li className="nav-item">
-              <a
-                className="nav-link acitve visible-xs"
-                aria-current="page"
-                href="#home"
-              >
-                Home
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#" className="d-lg-none">
+              HOME
+            </Nav.Link>
+            <Nav.Link href="#menu">MENU</Nav.Link>
+            <Nav.Link href="#about">ABOUT</Nav.Link>
+            <Nav.Link href="#awards">AWARDS</Nav.Link>
+            <Nav.Link href="#phone" id="phone" className="d-none d-lg-block">
+              <a href="tel:410-602-5008" className="nav-link">
+                <span>410-602-5008</span>
+                <div>* We Deliver</div>
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#menu">
-                Menu
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#awards">
-                Awards
-              </a>
-            </li>
-            <li className="nav-item ms-2">
-              410-602-5008
-              <div>* We Deliver</div>
-            </li>
-          </ul>
-        </div>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
