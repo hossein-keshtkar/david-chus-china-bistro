@@ -1,4 +1,7 @@
 .Navbar {
   background-color: orange;
-  /* height: 92px; */
+}
+
+.list {
+  list-style: none;
 }
