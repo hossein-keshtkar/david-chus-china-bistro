@@ -19,27 +19,40 @@ const MyNavbar = () => {
             className="collapse navbar-collapse me-2"
           />
           <div className="d-flex flex-column justify-content-center">
-            <h1>DAVID CHU'S CHINA BISTRO</h1>
+            <h1 className={`${styles.navbarHeader} fs-3`}>
+              DAVID CHU'S CHINA BISTRO
+            </h1>
             <div>
               <img src={star} alt="start-k-logo" />
-              <span>KOSHER CERTIFIED</span>
+              <span className="fs-6">KOSHER CERTIFIED</span>
             </div>
           </div>
         </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="d-flex justify-content-end w-100">
             <Nav.Link href="#" className="d-lg-none">
               HOME
             </Nav.Link>
-            <Nav.Link href="#menu">MENU</Nav.Link>
-            <Nav.Link href="#about">ABOUT</Nav.Link>
-            <Nav.Link href="#awards">AWARDS</Nav.Link>
-            <Nav.Link href="#phone" id="phone" className="d-none d-lg-block">
-              <a href="tel:410-602-5008" className="nav-link">
-                <span>410-602-5008</span>
-                <div>* We Deliver</div>
-              </a>
+            <Nav.Link href="#menu">
+              <span className="fs-6">MENU</span>
+            </Nav.Link>
+            <Nav.Link href="#about">
+              <span className="fs-6">ABOUT</span>
+            </Nav.Link>
+            <Nav.Link href="#awards">
+              <span className="fs-6">AWARDS</span>
+            </Nav.Link>
+            <Nav.Link
+              id="phone"
+              href="tel:410-602-5008"
+              className="d-none d-lg-block"
+            >
+              <span className="fs-6">410-602-5008</span>
+
+              {/* <div>* We Deliver</div> */}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
