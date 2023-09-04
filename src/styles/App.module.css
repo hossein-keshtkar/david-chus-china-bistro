@@ -1,3 +1,11 @@
+@font-face {
+  font-family: glyphicons-regular;
+  src: url("../assets/fonts/glyphicons-halflings-regular.eot")
+      url("../assets/fonts/glyphicons-halflings-regular.ttf") format("ttf"),
+    url("../assets/fonts/glyphicons-halflings-regular.woff") format("woff"),
+    url("../assets/fonts/glyphicons-halflings-regular.woff2") format("woff2");
+}
+
 body {
   margin: 0;
   padding: 0;
