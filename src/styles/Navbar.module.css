@@ -1,7 +1,25 @@
+@font-face {
+  font-family: glyphicons-regular;
+  src: url("../assets/fonts/glyphicons-halflings-regular.eot")
+      url("../assets/fonts/glyphicons-halflings-regular.ttf") format("ttf"),
+    url("../assets/fonts/glyphicons-halflings-regular.woff") format("woff"),
+    url("../assets/fonts/glyphicons-halflings-regular.woff2") format("woff2");
+}
+
 .Navbar {
   background-color: orange;
 }
 
+.navbarHeader {
+  font-family: glyphicons-regular;
+  color: darkolivegreen;
+  text-shadow: 1px 1px 0px #000;
+}
+
 .list {
   list-style: none;
+}
+
+.list > li {
+  margin-right: 15px;
 }

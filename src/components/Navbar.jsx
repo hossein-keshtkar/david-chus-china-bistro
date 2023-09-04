@@ -30,7 +30,7 @@ const MyNavbar = () => {
       aria-expanded={isExpanded}
       expand="lg"
     >
-      <Container className="container-fluid d-flex flex-row">
+      <Container className="d-flex flex-row">
         <div>
           {isExpanded && (
             <Navbar.Brand id="brand-name">
@@ -45,7 +45,9 @@ const MyNavbar = () => {
           )}
         </div>
         <div>
-          <h1 className="navbar-collapse">Daivd Chu's China Bistro</h1>
+          <h1 className={`${styles.navbarHeader} navbar-header`}>
+            Daivd Chu's China Bistro
+          </h1>
           <div className="d-flex align-items-center">
             <span className="me-2">
               <img src={star} alt="start-k-logo" />
@@ -54,14 +56,18 @@ const MyNavbar = () => {
           </div>
         </div>
         <div>
-          <ul className={`${styles.list} d-flex flex-d-row align-items-center just`}>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Awards</li>
-            <li>
-              <h3 className="m-0">410 602 5008</h3>* We Deliver
-            </li>
-          </ul>
+          {isExpanded && (
+            <ul
+              className={`${styles.list} d-flex flex-d-row align-items-center p-0 m-0`}
+            >
+              <li>Menu</li>
+              <li>About</li>
+              <li>Awards</li>
+              <li>
+                <h3 className="m-0">410 602 5008</h3>* We Deliver
+              </li>
+            </ul>
+          )}
         </div>
         <div>
           <button
