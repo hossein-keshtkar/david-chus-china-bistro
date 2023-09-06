@@ -12,31 +12,16 @@ const MainImg = () => {
 
   const handleLoad = () => {};
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoaded((prev) => !prev);
-    }, 2000);
-  }, []);
-
   return (
     <Container className="d-flex align-items-center justify-content-center">
-      {isLoaded ? (
-        <Image
-          rounded
-          src={imgSm}
-          srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}
-          sizes="(max-width: 768px) 100vw, (max-width: 992px) 100vw, 90vw"
-          alt="resturaunt"
-          className={`${styles.MainImg} img-fluid mt-3`}
-        />
-      ) : (
-        <Image
-          rounded
-          src={bluryImg}
-          alt="blury-resturaunt"
-          className={`${styles.bluryImg} img-fluid mt-3`}
-        />
-      )}
+      <Image
+        rounded
+        src={imgSm}
+        srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}
+        sizes="(max-width: 768px) 100vw, (max-width: 992px) 100vw, 90vw"
+        alt="resturaunt"
+        className={`${styles.MainImg} img-fluid mt-3`}
+      />
     </Container>
   );
 };
