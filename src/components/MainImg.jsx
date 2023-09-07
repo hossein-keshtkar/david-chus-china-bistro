@@ -7,26 +7,27 @@ import imgSm from "../assets/images/jumbotron_768.jpg";
 import styles from "../styles/MainImg.module.css";
 
 const MainImg = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   const blurredImg = useRef();
   const img = useRef();
 
   const loaded = () => {
-    blurredImg.current.classList.add("loaded");
-
+    console.log("hello");
     if (img.current.complete) {
-      loaded();
-    } else {
-      document.addEventListener("load", loaded);
+      blurredImg.current.classList.add("loaded");
     }
   };
 
   useEffect(() => {
-    // loaded();
+    console.log(img.current.complete);
+    if (img.current.complete) setIsLoaded(true);
   }, []);
 
   return (
     <Container
-      className={`${styles.blurredImg} d-flex align-items-center justify-content-center`}
+      className={`${styles.blurredImg} ${
+        isLoaded ? "loaded" : ""
+      } d-flex align-items-center justify-content-center p-0`}
       ref={blurredImg}
     >
       <Image
@@ -36,7 +37,7 @@ const MainImg = () => {
         srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}
         sizes="(max-width: 768px) 100vw, (max-width: 992px) 100vw, 90vw"
         alt="resturaunt"
-        className={`${styles.MainImg} img-fluid mt-3`}
+        className={`${styles.MainImg} img-fluid`}
         loading="lazy"
       />
     </Container>
