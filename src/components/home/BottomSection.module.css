@@ -1,16 +1,31 @@
-.row > div,
-.row iframe {
+.row > div {
   height: 200px;
 }
 
-.menuImg {
+.menuImg,
+.specials,
+iframe {
   height: 100%;
-  width: 100%;
+  width: 300px;
 }
 
-@media (min-width: 992px) {
-  .row > div,
-  .row iframe {
-    /* height: 250px; */
+@media (min-width: 576px) {
+  .menuImg,
+  .specials,
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .row > div {
+    height: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row > div {
+    height: 300px;
   }
 }
