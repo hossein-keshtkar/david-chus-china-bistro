@@ -21,6 +21,7 @@ const HomePageBottomSection = () => {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            className={styles.map}
           ></iframe>
         </div>
       </div>

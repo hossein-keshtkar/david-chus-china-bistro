@@ -1,18 +1,30 @@
 .row > div {
   height: 200px;
+  cursor: pointer;
 }
 
 .menuImg,
 .specials,
-iframe {
+.map {
+  transition: all 0.5s ease;
   height: 100%;
   width: 300px;
+  opacity: 0.9;
+}
+
+.menuImg:hover,
+.specials:hover,
+.map:hover {
+  scale: 1.03;
+  content: "Hey";
+  opacity: 1;
+  background: #000;
 }
 
 @media (min-width: 576px) {
   .menuImg,
   .specials,
-  iframe {
+  .map {
     height: 100%;
     width: 100%;
   }
