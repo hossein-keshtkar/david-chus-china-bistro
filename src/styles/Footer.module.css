@@ -3,3 +3,17 @@
   width: 100%;
   color: #fff;
 }
+
+.columns > div {
+  border-bottom: 1px solid #fff;
+}
+
+.columns:nth-last-child() {
+  border: 0;
+  height: 20vh;
+}
+
+.delivery {
+  color: green;
+  font-size: small;
+}
