@@ -1,12 +1,12 @@
 import React from "react";
 import MainImg from "../components/MainImg";
-import HomePageBottomSection from "../components/HomePageBottomSection";
+import BottomSection from "../components/home/BottomSection";
 
 const HomePage = () => {
   return (
     <div>
       <MainImg />
-      <HomePageBottomSection />
+      <BottomSection />
     </div>
   );
 };
