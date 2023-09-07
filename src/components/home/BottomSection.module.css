@@ -1,0 +1,16 @@
+.row > div,
+.row iframe {
+  height: 200px;
+}
+
+.menuImg {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .row > div,
+  .row iframe {
+    /* height: 250px; */
+  }
+}
