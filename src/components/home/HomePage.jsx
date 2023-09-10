@@ -1,6 +1,6 @@
 import React from "react";
-import MainImg from "../components/MainImg";
-import BottomSection from "../components/home/BottomSection";
+import MainImg from "./MainImg";
+import BottomSection from "./BottomSection";
 
 const HomePage = () => {
   return (
