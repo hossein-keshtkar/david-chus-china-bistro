@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Container, Image } from "react-bootstrap";
 
-import imgLg from "../assets/images/jumbotron_1200.jpg";
-import imgMd from "../assets/images/jumbotron_992.jpg";
-import imgSm from "../assets/images/jumbotron_768.jpg";
-import styles from "../styles/MainImg.module.css";
+import imgLg from "../../assets/images/jumbotron_1200.jpg";
+import imgMd from "../../assets/images/jumbotron_992.jpg";
+import imgSm from "../../assets/images/jumbotron_768.jpg";
+import styles from "../../styles/MainImg.module.css";
 
 const MainImg = () => {
   const [isLoaded, setIsLoaded] = useState(false);
