@@ -1,19 +1,24 @@
 import { RouterProvider } from "react-router-dom";
+import { Suspense, lazy } from "react";
+
 
 import styles from "./styles/App.module.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import { router } from "./components/router/router";
-import { Suspense } from "react";
+import FallBack from "./components/FallBack";
+
+
+const Footer = lazy(() => import("./components/Footer"));
+
 
 function App() {
   return (
     <div className={styles.App}>
       <Navbar />
-      <Suspense fallback={() => <h1>Loading...</h1>}>
+      <Suspense fallback={<FallBack />}>
         <RouterProvider router={router} />
+        <Footer />
       </Suspense>
-      <Footer />
     </div>
   );
 }
