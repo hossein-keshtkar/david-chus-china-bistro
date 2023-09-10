@@ -10,18 +10,16 @@ function LoginForm() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
+    event.preventDefault();
+
+    event.target[1].value = "";
 
     setValidated(true);
   };
 
   return (
     <Container className="my-5 d-flex justify-content-center">
-      <Card className="p-3 w-75">
+      <Card className="p-3">
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Row className="mb-3">
             <Form.Group
@@ -55,7 +53,7 @@ function LoginForm() {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" required />
               <Form.Control.Feedback type="invalid">
-                Password is wrong.
+                Username or password is wrong.
               </Form.Control.Feedback>
             </Form.Group>
           </Row>

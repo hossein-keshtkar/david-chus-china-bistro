@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           <div className="col-12 text-center mb-5 mt-3" style={{ border: 0 }}>
             © Copyright David Chu's China Bistro {year} |{" "}
-            <Link className="link text-decoration-none" to="admin/login">
+            <Link className="link text-decoration-none" to="/login/admin">
               Admin
             </Link>
           </div>

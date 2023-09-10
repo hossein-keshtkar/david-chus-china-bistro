@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import logo from "../assets/images/restaurant-logo_medium.png";
 import logoLg from "../assets/images/restaurant-logo_large.png";
 import star from "../assets/images/star-k-logo.png";
 import styles from "../styles/Navbar.module.css";
-import { Link } from "react-router-dom";
 import PhoneBtn from "./PhoneBtn";
 
 const MyNavbar = () => {
@@ -43,16 +43,19 @@ const MyNavbar = () => {
 
           <Navbar.Collapse id="basic-navbar-nav" className="col-lg-5">
             <Nav className="d-flex justify-content-end align-items-center w-100">
-              <Link className="link d-md-none active" to="/">
+              <Link
+                className="link text-decoration-none d-md-none active"
+                to="/"
+              >
                 <span>Home</span>
               </Link>
-              <Link to="/menu">
+              <Link className="link text-decoration-none me-md-2" to="/menu">
                 <span>Menu</span>
               </Link>
-              <Link to="/about">
+              <Link className="link text-decoration-none me-md-2" to="/about">
                 <span>About</span>
               </Link>
-              <Link to="/awards">
+              <Link className="link text-decoration-none" to="/awards">
                 <span>Awards</span>
               </Link>
               <Nav.Link
