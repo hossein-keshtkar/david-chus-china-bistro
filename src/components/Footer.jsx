@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 import styles from "../styles/Footer.module.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -41,9 +42,9 @@ const Footer = () => {
           </div>
           <div className="col-12 text-center mb-5 mt-3" style={{ border: 0 }}>
             © Copyright David Chu's China Bistro {year} |{" "}
-            <a className="link text-decoration-none" href="admin/login">
+            <Link className="link text-decoration-none" to="admin/login">
               Admin
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

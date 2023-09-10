@@ -1,18 +1,15 @@
 import React from "react";
-import MainImg from "./MainImg";
-import BottomSection from "./BottomSection";
 import MyNavbar from "../Navbar";
 import Footer from "../Footer";
 
-const Home = () => {
+const Menu = () => {
   return (
     <div>
       <MyNavbar />
-      <MainImg />
-      <BottomSection />
+      Menu
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Menu;

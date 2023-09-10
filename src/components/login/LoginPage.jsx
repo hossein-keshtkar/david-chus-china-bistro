@@ -1,18 +1,17 @@
 import React from "react";
-import MainImg from "./MainImg";
-import BottomSection from "./BottomSection";
+
 import MyNavbar from "../Navbar";
+import LoginForm from "./LoginForm";
 import Footer from "../Footer";
 
-const Home = () => {
+const LoginPage = () => {
   return (
     <div>
       <MyNavbar />
-      <MainImg />
-      <BottomSection />
+      <LoginForm />
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default LoginPage;

@@ -1,18 +1,15 @@
 import React from "react";
-import MainImg from "./MainImg";
-import BottomSection from "./BottomSection";
 import MyNavbar from "../Navbar";
 import Footer from "../Footer";
 
-const Home = () => {
+const Specials = () => {
   return (
     <div>
       <MyNavbar />
-      <MainImg />
-      <BottomSection />
+      Specials
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Specials;

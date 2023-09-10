@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Card, Container } from "react-bootstrap";
-
+import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import Row from "react-bootstrap/Row";
 
-function Login() {
+function LoginForm() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -67,4 +66,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginForm;

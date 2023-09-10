@@ -1,15 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
+import Error from "../Error";
 
-const HomePage = lazy(() => import("../home/HomePage"));
-const Login = lazy(() => import("../login/Login"));
-const Menu = lazy(() => import("../menu/Menu"));
-const Specials = lazy(() => import("../specials/Specials"));
+const Home = lazy(() => import("../home/HomePage"));
+const Login = lazy(() => import("../login/LoginPage"));
+const Menu = lazy(() => import("../menu/MenuPage"));
+const Specials = lazy(() => import("../specials/SpecialsPage"));
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <Home />,
   },
   {
     path: "/admin/login",
@@ -22,5 +23,6 @@ export const router = createBrowserRouter([
   {
     path: "/menu/specials",
     element: <Specials />,
+    errorElement: <Error />,
   },
 ]);

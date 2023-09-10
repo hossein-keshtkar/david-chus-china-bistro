@@ -4,16 +4,29 @@ import { Container, Image } from "react-bootstrap";
 import menuImg from "../../assets/images/menu-tile.jpg";
 import specialsImg from "../../assets/images/specials-tile.jpg";
 import styles from "../../styles/BottomSection.module.css";
+import { Link } from "react-router-dom";
 
 const HomePageBottomSection = () => {
   return (
     <Container className="my-5">
       <div className={`${styles.row} row`}>
         <div className="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-flex align-items-center justify-content-center">
-          <Image src={menuImg} className={`${styles.menuImg}`} loading="lazy" />
+          <Link to="/menu">
+            <Image
+              src={menuImg}
+              className={`${styles.menuImg}`}
+              loading="lazy"
+            />
+          </Link>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-flex align-items-center justify-content-center">
-          <Image src={specialsImg} className={styles.specials} loading="lazy" />
+          <Link to="/menu/specials">
+            <Image
+              src={specialsImg}
+              className={styles.specials}
+              loading="lazy"
+            />
+          </Link>
         </div>
         <div className="col-lg-4 col-md-12 mb-3 d-flex align-items-center justify-content-center">
           <iframe
