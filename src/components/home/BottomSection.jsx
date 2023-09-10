@@ -3,17 +3,17 @@ import { Container, Image } from "react-bootstrap";
 
 import menuImg from "../../assets/images/menu-tile.jpg";
 import specialsImg from "../../assets/images/specials-tile.jpg";
-import styles from "./BottomSection.module.css";
+import styles from "../../styles/BottomSection.module.css";
 
 const HomePageBottomSection = () => {
   return (
     <Container className="my-5">
       <div className={`${styles.row} row`}>
         <div className="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-flex align-items-center justify-content-center">
-          <Image src={menuImg} className={`${styles.menuImg}`} />
+          <Image src={menuImg} className={`${styles.menuImg}`} loading="lazy" />
         </div>
         <div className="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-flex align-items-center justify-content-center">
-          <Image src={specialsImg} className={styles.specials} />
+          <Image src={specialsImg} className={styles.specials} loading="lazy" />
         </div>
         <div className="col-lg-4 col-md-12 mb-3 d-flex align-items-center justify-content-center">
           <iframe
