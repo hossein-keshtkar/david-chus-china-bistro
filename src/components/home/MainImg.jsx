@@ -24,23 +24,17 @@ const MainImg = () => {
   }, []);
 
   return (
-    <Container
-      className={`d-flex align-items-center justify-content-center mt-5 ${styles.Container}`}
-    >
-      <div
-        className={`${styles.blurredImg} ${
-          isLoaded ? styles.loaded : ""
-        } w-100 h-100`}
-      >
+    <Container className="d-flex align-items-center justify-content-center my-3">
+      <div className={`${styles.blurredImg} ${isLoaded ? styles.loaded : ""}`}>
         <Image
-          // src={imgSm}
+          src={imgSm}
           ref={imgRef}
-          // srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}
+          srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}
           sizes="(max-width: 768px) 100vw, (max-width: 992px) 100vw, 90vw"
-          width={"100%"}
-          height={isLoaded ? "100%" : 300}
           alt="resturaunt"
           loading="lazy"
+          width={"100%"}
+          height={"100%"}
         />
       </div>
     </Container>

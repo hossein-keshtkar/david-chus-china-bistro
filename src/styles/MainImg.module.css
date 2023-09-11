@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* height: 100px; */
+  height: 400px;
+  width: 100%;
 }
 
 .blurredImg img {
