@@ -12,20 +12,12 @@ const HomePageBottomSection = () => {
       <div className={`${styles.row} row`}>
         <div className="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-flex align-items-center justify-content-center">
           <Link to="/menu">
-            <Image
-              src={menuImg}
-              className={`${styles.menuImg}`}
-              loading="lazy"
-            />
+            <Image src={menuImg} className={styles.images} loading="lazy" />
           </Link>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-flex align-items-center justify-content-center">
           <Link to="/menu/specials">
-            <Image
-              src={specialsImg}
-              className={styles.specials}
-              loading="lazy"
-            />
+            <Image src={specialsImg} className={styles.images} loading="lazy" />
           </Link>
         </div>
         <div className="col-lg-4 col-md-12 mb-3 d-flex align-items-center justify-content-center">

@@ -1,52 +1,43 @@
-.MainImg,
 .blurredImg {
-  box-shadow: 0px 0px 10px 0px #00000090;
-}
-
-.MainImg {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out;
-}
-
-.blurredImg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  animation: pulsating 2s infinite;
-  background: #fff;
-  border-radius: 5px;
-}
-
-.blurredImg {
-  position: relative;
-  /* background-image: url(../assets/images/blury-resturant.png);
-  background-position: center;
+  background-image: url(../assets/images/blury-resturant.png);
   background-repeat: no-repeat;
-  background-size: cover; */
-  border-radius: 5px;
-  margin-top: 10px;
+  background-position: center;
+  background-size: cover;
+  /* height: 100px; */
 }
 
-.blurredImg.loaded::before {
-  content: none;
-  animation: none;
+.blurredImg img {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
 }
 
 .blurredImg.loaded img {
   opacity: 1;
 }
 
-@keyframes pulsating {
+/* .blurredImg.loaded::before {
+  animation: none;
+  content: none;
+} */
+
+/* .blurredImg::before {
+  animation: pulse 2.5s infinite;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  inset: 0;
+  opacity: 0;
+  background-color: white;
+} */
+
+@keyframes pulse {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
-
   50% {
-    opacity: 10%;
+    opacity: 0.1;
   }
-
   100% {
-    opacity: 0%;
+    opacity: 0;
   }
 }

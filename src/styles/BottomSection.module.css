@@ -1,43 +1,22 @@
-.row > div {
-  height: 200px;
-  cursor: pointer;
-}
-
-.menuImg,
-.specials,
+.images,
 .map {
-  transition: all 0.5s ease;
   height: 100%;
-  width: 300px;
-  opacity: 0.9;
+  width: 100%;
+  box-shadow: 0 0 10px 0px #0000007a;
+  border-radius: 5px;
+  transition: all 0.5s ease;
 }
 
-.menuImg:hover,
-.specials:hover,
+.images:hover,
 .map:hover {
   scale: 1.03;
-  content: "Hey";
-  opacity: 1;
-  background: #000;
+
+  content: "hey";
 }
 
-@media (min-width: 576px) {
-  .menuImg,
-  .specials,
+@media (max-width: 575px) {
   .map {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .row > div {
     height: 250px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .row > div {
-    height: 270px;
+    width: 360px;
   }
 }
