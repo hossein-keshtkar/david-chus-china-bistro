@@ -5,7 +5,6 @@ import imgLg from "../../assets/images/jumbotron_1200.jpg";
 import imgMd from "../../assets/images/jumbotron_992.jpg";
 import imgSm from "../../assets/images/jumbotron_768.jpg";
 import styles from "../../styles/MainImg.module.css";
-import blurred from "../../assets/images/blury-resturant.png";
 
 const MainImg = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -18,18 +17,16 @@ const MainImg = () => {
 
     imgRef.current.addEventListener("load", handleImgLoad);
 
-    return () => {
-      imgRef.current.removeEventListener("load", handleImgLoad);
-    };
+    return () => imgRef.current.removeEventListener("load", handleImgLoad);
   }, []);
 
   return (
     <Container className="d-flex align-items-center justify-content-center my-3">
       <div className={`${styles.blurredImg} ${isLoaded ? styles.loaded : ""}`}>
         <Image
-          src={imgSm}
+          // src={imgSm}
           ref={imgRef}
-          srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}
+          // srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}
           sizes="(max-width: 768px) 100vw, (max-width: 992px) 100vw, 90vw"
           alt="resturaunt"
           loading="lazy"

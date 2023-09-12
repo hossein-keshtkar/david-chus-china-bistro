@@ -3,8 +3,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 400px;
+  animation: pulse 2s infinite;
+  height: 100%;
   width: 100%;
+}
+
+.blurredImg.loaded {
+  animation: none;
 }
 
 .blurredImg img {
@@ -16,29 +21,14 @@
   opacity: 1;
 }
 
-/* .blurredImg.loaded::before {
-  animation: none;
-  content: none;
-} */
-
-/* .blurredImg::before {
-  animation: pulse 2.5s infinite;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  inset: 0;
-  opacity: 0;
-  background-color: white;
-} */
-
 @keyframes pulse {
   0% {
-    opacity: 0;
+    opacity: 0.5;
   }
   50% {
-    opacity: 0.1;
+    opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 0.5;
   }
 }

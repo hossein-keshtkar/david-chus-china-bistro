@@ -1,22 +1,21 @@
 .images,
 .map {
-  height: 100%;
-  width: 100%;
   box-shadow: 0 0 10px 0px #0000007a;
   border-radius: 5px;
   transition: all 0.5s ease;
+  height: 100%;
+  width: 100%;
 }
 
 .images:hover,
 .map:hover {
   scale: 1.03;
-
-  content: "hey";
 }
 
-@media (max-width: 575px) {
-  .map {
-    height: 250px;
-    width: 360px;
+@media (max-width: 576px) {
+  .map,
+  .images {
+    height: 170.8px;
+    width: 246px;
   }
 }
