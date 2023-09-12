@@ -15,9 +15,13 @@ const MainImg = () => {
       setIsLoaded(imgRef.current.complete);
     };
 
-    imgRef.current.addEventListener("load", handleImgLoad);
+    const imgElement = imgRef.current;
 
-    return () => imgRef.current.removeEventListener("load", handleImgLoad);
+    if (imgElement) imgElement.addEventListener("load", handleImgLoad);
+
+    return () => {
+      if (imgElement) imgElement.removeEventListener("load", handleImgLoad);
+    };
   }, []);
 
   return (
