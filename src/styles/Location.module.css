@@ -1,4 +1,4 @@
-.images{
+.map {
   transition: all 0.5s ease;
   box-shadow: 0 0 10px 0px #0000007a;
   height: 100%;
@@ -16,17 +16,6 @@
   transition: all 0.5s ease;
 }
 
-.images:hover {
-  filter: grayscale(100%);
-}
-
-.images:hover {
+.map:hover {
   scale: 1.03;
-}
-
-@media (max-width: 576px) {
-  .map {
-    height: 170.8px;
-    width: 246px;
-  }
 }
