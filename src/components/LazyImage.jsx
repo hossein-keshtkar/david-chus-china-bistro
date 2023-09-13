@@ -1,14 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Image } from "react-bootstrap";
 
-const LazyImage = ({ blurred, src, alt }) => {
+const LazyImage = ({ blurred, src, alt, srcSet, sizes }) => {
   const [isMainImgLoaded, setIsMainImgLoaded] = useState(false);
 
-  const style = {
+  const imgRef = useRef();
+
+  const mainImgStyles = {
     aspectRatio: "2/1.2",
   };
 
-  const imgRef = useRef();
+  const blurredImgStyles = {
+    aspectRatio: "2/1.2",
+    opacity: isMainImgLoaded ? 0 : 1,
+    transition: "opacity 250ms ease",
+  };
 
   return (
     <div className="position-relative">
@@ -17,17 +23,16 @@ const LazyImage = ({ blurred, src, alt }) => {
         ref={imgRef}
         src={blurred}
         alt={alt}
-        style={{
-          aspectRatio: "2/1.2",
-          opacity: isMainImgLoaded ? 0 : 1,
-          transition: "opacity 0.5s ease",
-        }}
+        style={blurredImgStyles}
       />
       <Image
         className="w-100 rounded"
         src={src}
         alt={alt}
-        style={style}
+        srcSet={srcSet && srcSet}
+        sizes={sizes && sizes}
+        loading="lazy"
+        style={mainImgStyles}
         onLoad={() => {
           setIsMainImgLoaded(true);
         }}
