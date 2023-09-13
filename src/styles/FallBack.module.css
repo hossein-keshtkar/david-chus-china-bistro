@@ -1,0 +1,14 @@
+.container {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+.dots {
+  width: 25px;
+  margin-left: 5px;
+}
