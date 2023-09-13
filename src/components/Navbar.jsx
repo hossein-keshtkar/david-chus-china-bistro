@@ -44,18 +44,24 @@ const MyNavbar = () => {
           <Navbar.Collapse id="basic-navbar-nav" className="col-lg-5">
             <Nav className="d-flex justify-content-end align-items-center w-100">
               <Link
-                className="link text-decoration-none d-md-none active"
+                className="link-dark text-decoration-none d-md-none active"
                 to="/"
               >
                 <span>Home</span>
               </Link>
-              <Link className="link text-decoration-none me-md-2" to="/menu">
+              <Link
+                className="link-dark text-decoration-none me-md-2"
+                to="/menu"
+              >
                 <span>Menu</span>
               </Link>
-              <Link className="link text-decoration-none me-md-2" to="/about">
+              <Link
+                className="link-dark text-decoration-none me-md-2"
+                to="/about"
+              >
                 <span>About</span>
               </Link>
-              <Link className="link text-decoration-none" to="/awards">
+              <Link className="link-dark text-decoration-none" to="/awards">
                 <span>Awards</span>
               </Link>
               <Nav.Link

@@ -27,7 +27,7 @@ const PhoneBtn = () => {
       >
         <a
           href="tel:410-602-5008"
-          className="w-100 icon-link icon-link-hover p-2 d-block text-center fs-4 text-decoration-none"
+          className="w-100 link-dark icon-link icon-link-hover p-2 d-block text-center fs-4 text-decoration-none"
         >
           <span>410-602-5008</span>
           <PhoneIcon />
