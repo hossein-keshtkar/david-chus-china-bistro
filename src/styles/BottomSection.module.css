@@ -11,7 +11,7 @@
 }
 
 .item:hover {
-  filter: contrast(120%);
+  filter: grayscale(100%);
   scale: 1.03;
 }
 

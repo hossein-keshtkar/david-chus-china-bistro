@@ -14,7 +14,7 @@ const HomePageBottomSection = () => {
   const [isMenuHovered, setIsMenuHovered] = useState(false);
   const [isSpecialsHovered, setIsSpecialsHovered] = useState(false);
 
-  console.log(process.env.REACT_APP_MENU_API);
+  // console.log(process.env.REACT_APP_MENU_API);
 
   return (
     <Container className="my-5">
