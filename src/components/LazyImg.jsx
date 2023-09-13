@@ -22,6 +22,7 @@ const LazyImg = ({ blurred, src, alt, srcSet, sizes }) => {
         alt={alt}
         style={blurredImgStyles}
       />
+      {!isMainImgLoaded && <div className={`${styles.shimmer} rounded`}></div>}
       <Image
         className={`${styles.mainImg} w-100 rounded`}
         src={src}

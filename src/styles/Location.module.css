@@ -1,19 +1,19 @@
-.map {
+.map,
+.description {
   transition: all 0.5s ease;
-  box-shadow: 0 0 10px 0px #0000007a;
-  height: 100%;
   width: 100%;
+}
+
+.map {
+  height: 100%;
 }
 
 .description {
   position: absolute;
   text-decoration: none;
   bottom: -60px;
-  text-align: center;
-  width: 100%;
   cursor: default;
   color: #fff;
-  transition: all 0.5s ease;
 }
 
 .map:hover {

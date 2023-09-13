@@ -1,32 +1,23 @@
-.images{
+.item,
+.description {
   transition: all 0.5s ease;
-  box-shadow: 0 0 10px 0px #0000007a;
-  height: 100%;
-  width: 100%;
 }
 
 .description {
   position: absolute;
   text-decoration: none;
-  bottom: -60px;
-  text-align: center;
-  width: 100%;
-  cursor: default;
   color: #fff;
-  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
-.images:hover {
-  filter: grayscale(100%);
-}
-
-.images:hover {
+.item:hover {
+  filter: contrast(120%);
   scale: 1.03;
 }
 
 @media (max-width: 576px) {
-  .map {
-    height: 170.8px;
-    width: 246px;
+  .item {
+    height: 165.6px;
+    width: 300px;
   }
 }
