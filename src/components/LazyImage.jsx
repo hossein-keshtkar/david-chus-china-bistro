@@ -17,7 +17,11 @@ const LazyImage = ({ blurred, src, alt }) => {
         ref={imgRef}
         src={blurred}
         alt={alt}
-        style={style}
+        style={{
+          aspectRatio: "2/1.2",
+          opacity: isMainImgLoaded ? 0 : 1,
+          transition: "opacity 0.5s ease",
+        }}
       />
       <Image
         className="w-100 rounded"
