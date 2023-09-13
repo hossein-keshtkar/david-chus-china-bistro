@@ -10,11 +10,11 @@ const MainImg = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const imgRef = useRef();
 
-  useEffect(() => {
-    const handleImgLoad = () => {
-      setIsLoaded(imgRef.current.complete);
-    };
+  const handleImgLoad = () => {
+    setIsLoaded(imgRef.current.complete);
+  };
 
+  useEffect(() => {
     const imgElement = imgRef.current;
 
     if (imgElement) imgElement.addEventListener("load", handleImgLoad);

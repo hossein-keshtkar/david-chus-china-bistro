@@ -2,30 +2,58 @@ import React, { useEffect, useRef, useState } from "react";
 import { Container, Image } from "react-bootstrap";
 
 import menuImg from "../../assets/images/menu-tile.jpg";
+import blurredMenu from "../../assets/images/blurred-menu.png";
 import specialsImg from "../../assets/images/specials-tile.jpg";
 import styles from "../../styles/BottomSection.module.css";
 import { Link } from "react-router-dom";
 
 const HomePageBottomSection = () => {
-  const [isMapLoaded, setIsMapLoaded] = useState(false);
+  // const [isMapLoaded, setIsMapLoaded] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isSpecialsVisible, setIsSpecialsVisible] = useState(false);
   const [isMapHovered, setIsMapHovered] = useState(false);
+
+  const [isMenuImgLoaded, setIsMenuImgLoaded] = useState(false);
+
   const mapRef = useRef();
+  const menuRef = useRef();
 
   const className =
     "col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-flex align-items-center justify-content-center";
 
-  const mapLoadHandler = () => {
-    setIsMapLoaded(true);
+  const handleMenuImg = () => {
+    setIsMenuImgLoaded(menuRef.current.complete);
+  };
+
+  const menuStyle = {
+    backgroundImage: `url(${blurredMenu})`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    width: "300px",
+    height: "150px",
   };
 
   useEffect(() => {
-    // mapRef.current
-    // mapRef.onLoad = () => {
-    //   setIsMapLoaded(true);
-    // };
+    const menuEl = menuRef.current;
+
+    if (menuEl) menuEl.addEventListener("load", handleMenuImg);
+
+    return () => {
+      if (menuEl) menuEl.removeEventListener("load", handleMenuImg);
+    };
   }, []);
+
+  // const mapLoadHandler = () => {
+  //   setIsMapLoaded(true);
+  // };
+
+  // useEffect(() => {
+  // mapRef.current
+  // mapRef.onLoad = () => {
+  //   setIsMapLoaded(true);
+  // };
+  // }, []);
 
   // useEffect(() => {
   //   console.log(isMapLoaded);
@@ -37,16 +65,18 @@ const HomePageBottomSection = () => {
         <div className={className}>
           <Link to="/menu" className={styles.links}>
             <Image
+              ref={menuRef}
               onMouseEnter={() => {
                 setIsMenuVisible(true);
               }}
               onMouseLeave={() => {
                 setIsMenuVisible(false);
               }}
-              src={menuImg}
+              // src={menuImg}
               className={styles.images}
               loading="lazy"
               rounded
+              style={menuStyle}
             />
             <h1
               className={styles.description}
