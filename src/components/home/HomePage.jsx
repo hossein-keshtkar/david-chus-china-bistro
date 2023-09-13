@@ -8,14 +8,14 @@ import imgLg from "../../assets/images/jumbotron_1200.jpg";
 import imgMd from "../../assets/images/jumbotron_992.jpg";
 import imgSm from "../../assets/images/jumbotron_768.jpg";
 import blurred from "../../assets/images/blury-resturant.png";
-import LazyImage from "../LazyImage";
+import LazyImg from "../LazyImg";
 
 const Home = () => {
   return (
     <div>
       <MyNavbar />
       <Container className="mt-3">
-        <LazyImage
+        <LazyImg
           blurred={blurred}
           src={imgSm}
           srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}

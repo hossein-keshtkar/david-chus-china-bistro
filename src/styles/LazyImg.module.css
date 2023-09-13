@@ -1,0 +1,22 @@
+.mainImg,
+.blurredImg {
+  aspect-ratio: 2/1.2;
+}
+
+.blurredImg {
+  transition: opacity 250ms ease-in-out;
+  animation: puls 2s infinite;
+  filter: brightness(1.2);
+}
+
+@keyframes puls {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

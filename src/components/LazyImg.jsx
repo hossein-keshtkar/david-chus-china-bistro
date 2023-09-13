@@ -1,38 +1,34 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Image } from "react-bootstrap";
 
-const LazyImage = ({ blurred, src, alt, srcSet, sizes }) => {
+import styles from "../styles/LazyImg.module.css";
+
+const LazyImg = ({ blurred, src, alt, srcSet, sizes }) => {
   const [isMainImgLoaded, setIsMainImgLoaded] = useState(false);
 
   const imgRef = useRef();
 
-  const mainImgStyles = {
-    aspectRatio: "2/1.2",
-  };
-
   const blurredImgStyles = {
-    aspectRatio: "2/1.2",
     opacity: isMainImgLoaded ? 0 : 1,
-    transition: "opacity 250ms ease",
+    animation: isMainImgLoaded && "none",
   };
 
   return (
     <div className="position-relative">
       <Image
-        className="w-100 rounded position-absolute"
+        className={`${styles.blurredImg} w-100 rounded position-absolute`}
         ref={imgRef}
         src={blurred}
         alt={alt}
         style={blurredImgStyles}
       />
       <Image
-        className="w-100 rounded"
+        className={`${styles.mainImg} w-100 rounded`}
         src={src}
         alt={alt}
         srcSet={srcSet && srcSet}
         sizes={sizes && sizes}
         loading="lazy"
-        style={mainImgStyles}
         onLoad={() => {
           setIsMainImgLoaded(true);
         }}
@@ -41,4 +37,4 @@ const LazyImage = ({ blurred, src, alt, srcSet, sizes }) => {
   );
 };
 
-export default LazyImage;
+export default LazyImg;
