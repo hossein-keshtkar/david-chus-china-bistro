@@ -33,7 +33,7 @@ const HomePageBottomSection = () => {
           >
             <LazyImg src={menuImg} blurred={blurredMenu} alt={"menu"} />
             <h1
-              className={styles.description}
+              className={`${styles.description} d-none d-lg-block`}
               style={{
                 opacity: isMenuHovered ? 1 : 0,
               }}
@@ -61,7 +61,7 @@ const HomePageBottomSection = () => {
               alt={"specials"}
             />
             <h1
-              className={styles.description}
+              className={`${styles.description} d-none d-lg-block`}
               style={{
                 opacity: isSpecialsHovered ? 1 : 0,
               }}
@@ -71,7 +71,7 @@ const HomePageBottomSection = () => {
           </Link>
         </div>
 
-        <div className="col-lg-4 col-md-12 mb-3">
+        <div className={`${styles.mapContainer} col-lg-4 col-md-12 mb-3`}>
           <Location />
         </div>
       </div>

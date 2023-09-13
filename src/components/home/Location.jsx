@@ -29,7 +29,7 @@ const Location = () => {
       ></iframe>
       {!isMapLoaded && <div className={styles.shimmer}></div>}
       <h1
-        className={styles.description}
+        className={`${styles.description} d-none d-lg-block`}
         style={{
           opacity: isMapHovered ? 1 : 0,
         }}

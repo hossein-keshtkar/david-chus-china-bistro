@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 576px) {
-  .item {
+  .item, .mapContainer {
     height: 165.6px;
     width: 300px;
   }
