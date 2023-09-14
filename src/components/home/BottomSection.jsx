@@ -14,7 +14,8 @@ const HomePageBottomSection = () => {
   const [isMenuHovered, setIsMenuHovered] = useState(false);
   const [isSpecialsHovered, setIsSpecialsHovered] = useState(false);
 
-  // console.log(process.env.REACT_APP_MENU_API);
+  const menu = process.env.REACT_APP_MENU_API;
+  const specials = process.env.REACT_APP_SPECIALS_API;
 
   return (
     <Container className="my-5">
@@ -23,7 +24,7 @@ const HomePageBottomSection = () => {
           className={`${styles.item} col-lg-4 col-md-6 col-sm-6 col-12 mb-3`}
         >
           <Link
-            to="/menu"
+            to={menu}
             onMouseEnter={() => {
               setIsMenuHovered(true);
             }}
@@ -47,7 +48,7 @@ const HomePageBottomSection = () => {
           className={`${styles.item} col-lg-4 col-md-6 col-sm-6 col-12 mb-3`}
         >
           <Link
-            to="/menu/specials"
+            to={specials}
             onMouseEnter={() => {
               setIsSpecialsHovered(true);
             }}
