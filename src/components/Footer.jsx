@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const year = new Date().getFullYear();
 
+  const admin = process.env.REACT_APP_ADMIN_API;
+
   return (
     <footer className={styles.Footer}>
       <Container>
@@ -42,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="col-12 text-center mb-5 mt-3" style={{ border: 0 }}>
             © Copyright David Chu's China Bistro {year} |{" "}
-            <Link className="link-light text-decoration-none" to="/login/admin">
+            <Link className="link-light text-decoration-none" to={admin}>
               Admin
             </Link>
           </div>
