@@ -8,7 +8,7 @@ const Location = () => {
   const mapRef = useRef();
 
   return (
-    <div className="position-relative h-100 w-100 d-flex justify-content-center">
+    <div className="position-relative h-100 w-100 d-flex flex-column justify-content-center">
       <iframe
         className={`${styles.map} rounded`}
         allowFullScreen={false}

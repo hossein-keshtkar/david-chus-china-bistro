@@ -3,7 +3,7 @@ import { Image } from "react-bootstrap";
 
 import styles from "../styles/LazyImg.module.css";
 
-const LazyImg = ({ blurred, src, alt, srcSet, sizes }) => {
+const LazyImg = ({ blurred, src, alt, srcSet, sizes, style }) => {
   const [isMainImgLoaded, setIsMainImgLoaded] = useState(false);
 
   const imgRef = useRef();
@@ -14,7 +14,7 @@ const LazyImg = ({ blurred, src, alt, srcSet, sizes }) => {
   };
 
   return (
-    <div className="position-relative">
+    <div className="position-relative" style={style && style}>
       <Image
         className={`${styles.blurredImg} w-100 rounded position-absolute`}
         ref={imgRef}
