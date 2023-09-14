@@ -1,22 +1,5 @@
-.item,
-.description {
-  transition: all 0.5s ease;
-}
-
-.description {
-  position: absolute;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-.item:hover {
-  filter: grayscale(100%);
-  scale: 1.03;
-}
-
 @media (max-width: 576px) {
-  .item, .mapContainer {
+  .mapContainer {
     height: 165.6px;
     width: 300px;
   }
