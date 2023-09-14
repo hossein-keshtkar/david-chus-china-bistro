@@ -6,6 +6,7 @@ const Menu = () => {
   return (
     <div>
       <MyNavbar />
+      <h1>Menu Categories</h1>
       <Footer />
     </div>
   );
