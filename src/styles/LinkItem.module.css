@@ -6,6 +6,7 @@
 .description {
   position: absolute;
   text-decoration: none;
+  color: #fff;
   cursor: pointer;
 }
 
