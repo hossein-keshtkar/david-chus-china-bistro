@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 
-import styles from "../../styles/Location.module.css";
+import styles from "../../styles/HomeLocation.module.css";
 import Shimmer from "../Shimmer";
 
-const Location = () => {
+const HomeLocation = () => {
   const [isMapHovered, setIsMapHovered] = useState(false);
   const [isMapLoaded, setIsMapLoaded] = useState(false);
   const mapRef = useRef();
@@ -49,4 +49,4 @@ const Location = () => {
   );
 };
 
-export default Location;
+export default HomeLocation;
