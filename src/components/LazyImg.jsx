@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Image } from "react-bootstrap";
 
 import styles from "../styles/LazyImg.module.css";
+import Shimmer from "./Shimmer";
 
 const LazyImg = ({ blurred, src, alt, srcSet, sizes, style }) => {
   const [isMainImgLoaded, setIsMainImgLoaded] = useState(false);
@@ -22,7 +23,7 @@ const LazyImg = ({ blurred, src, alt, srcSet, sizes, style }) => {
         alt={alt}
         style={blurredImgStyles}
       />
-      {!isMainImgLoaded && <div className={`${styles.shimmer} rounded`}></div>}
+      {!isMainImgLoaded && <Shimmer />}
       <Image
         className={`${styles.mainImg} w-100 rounded`}
         src={src}
