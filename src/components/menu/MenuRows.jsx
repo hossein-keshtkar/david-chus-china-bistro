@@ -2,9 +2,10 @@ import React from "react";
 
 import MenuItem from "./MenuItem";
 
-const Rows = () => {
+const MenuRows = () => {
   return (
-    <div className="row">
+    <div className="row my-5">
+      <MenuItem />
       <MenuItem />
       <MenuItem />
       <MenuItem />
@@ -17,4 +18,4 @@ const Rows = () => {
   );
 };
 
-export default Rows;
+export default MenuRows;
