@@ -5,11 +5,11 @@ import menuImg from "../../assets/images/menu-tile.jpg";
 import blurredMenu from "../../assets/images/blurred-menu.png";
 import specialsImg from "../../assets/images/specials-tile.jpg";
 import blurredSpecials from "../../assets/images/blurred-specials.png";
-import styles from "../../styles/BottomSection.module.css";
-import Location from "./Location";
-import LinkItem from "./LinkItem";
+import styles from "../../styles/HomeRow.module.css";
+import Location from "./HomeLocation";
+import LinkItem from "./HomeItem";
 
-const HomePageBottomSection = () => {
+const HomeRow = () => {
   const menu = process.env.REACT_APP_MENU_API;
   const specials = process.env.REACT_APP_SPECIALS_API;
 
@@ -38,4 +38,4 @@ const HomePageBottomSection = () => {
   );
 };
 
-export default HomePageBottomSection;
+export default HomeRow;
