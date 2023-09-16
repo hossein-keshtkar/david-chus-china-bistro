@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 
 import styles from "../../styles/Location.module.css";
+import Shimmer from "../Shimmer";
 
 const Location = () => {
   const [isMapHovered, setIsMapHovered] = useState(false);
@@ -27,7 +28,7 @@ const Location = () => {
           setIsMapHovered(false);
         }}
       ></iframe>
-      {!isMapLoaded && <div className={styles.shimmer}></div>}
+      {!isMapLoaded && <Shimmer />}
       <h1
         className={`${styles.description} d-none d-lg-block`}
         style={{
