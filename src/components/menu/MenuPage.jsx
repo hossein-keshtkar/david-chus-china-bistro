@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 import MyNavbar from "../Navbar";
 import Footer from "../Footer";
-import Rows from "./Rows";
+import MenuRows from "./MenuRows";
 
 const Menu = () => {
   return (
@@ -15,7 +15,7 @@ const Menu = () => {
           Substituting white rice with brown rice or fried rice after 3:00pm
           will be $1.50 for a pint and $2.50 for a quart.
         </p>
-        <Rows />
+        <MenuRows />
       </Container>
       <Footer />
     </div>

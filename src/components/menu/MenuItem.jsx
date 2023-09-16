@@ -1,11 +1,20 @@
 import React from "react";
 
-import styles from "../../styles/MenuPage.module.css";
+import styles from "../../styles/MenuItem.module.css";
 
 const MenuItem = () => {
   return (
-    <div className={`${styles.item} col-lg-3 col-md-4 mb-3`}>
-      <div className="w-100 h-100 border border-dark p-2">hey</div>
+    <div className={`${styles.container} col-lg-3 col-md-4 my-3`}>
+      <div
+        className={`${styles.item} d-flex justify-content-center position-relative rounded p-2`}
+      >
+        <div
+          className={`${styles.title} rounded-bottom position-absolute bottom-0 text-center py-1`}
+        >
+          Hey
+        </div>
+      </div>
+      <div className={styles.shimmer}></div>
     </div>
   );
 };

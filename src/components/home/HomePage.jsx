@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-import BottomSection from "./BottomSection";
+import HomeRow from "./HomeRow";
 import MyNavbar from "../Navbar";
 import Footer from "../Footer";
 import imgLg from "../../assets/images/jumbotron_1200.jpg";
@@ -22,7 +22,7 @@ const Home = () => {
           srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}
           sizes="(max-width: 768px) 100vw, (max-width: 992px) 100vw, 90vw"
         />
-        <BottomSection />
+        <HomeRow />
       </Container>
       <Footer />
     </div>
