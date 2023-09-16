@@ -21,7 +21,6 @@ const Home = () => {
           src={imgSm}
           srcSet={`${imgSm} 768w, ${imgMd} 992w, ${imgLg} 1440w`}
           sizes="(max-width: 768px) 100vw, (max-width: 992px) 100vw, 90vw"
-          style={{ boxShadow: "0 0 10px 0 #000" }}
         />
         <BottomSection />
       </Container>
