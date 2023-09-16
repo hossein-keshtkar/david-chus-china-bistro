@@ -1,10 +1,10 @@
 import React, { useState, memo } from "react";
 import { Link } from "react-router-dom";
 
-import styles from "../../styles/LinkItem.module.css";
+import styles from "../../styles/HomeItem.module.css";
 import LazyImg from "../LazyImg";
 
-const LinkItem = ({ to, src, blurred, alt, header }) => {
+const HomeItem = ({ to, src, blurred, alt, header }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -32,4 +32,4 @@ const LinkItem = ({ to, src, blurred, alt, header }) => {
   );
 };
 
-export default memo(LinkItem);
+export default memo(HomeItem);
