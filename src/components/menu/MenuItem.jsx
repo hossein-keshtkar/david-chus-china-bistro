@@ -4,7 +4,9 @@ import styles from "../../styles/MenuItem.module.css";
 
 const MenuItem = () => {
   return (
-    <div className={`${styles.container} col-lg-3 col-md-4 my-3`}>
+    <div
+      className={`${styles.container} d-flex justify-content-center col-lg-3 col-md-4 my-3`}
+    >
       <div
         className={`${styles.item} d-flex justify-content-center position-relative rounded p-2`}
       >
