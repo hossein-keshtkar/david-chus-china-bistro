@@ -4,12 +4,13 @@ import { Container } from "react-bootstrap";
 import MyNavbar from "../Navbar";
 import Footer from "../Footer";
 import MenuRows from "./MenuRows";
+import styles from "../../styles/MenuPage.module.css";
 
 const Menu = () => {
   return (
     <div>
       <MyNavbar />
-      <Container>
+      <Container className={styles.Container}>
         <h3 className="text-center mt-5">Menu Categories</h3>
         <p className="text-center">
           Substituting white rice with brown rice or fried rice after 3:00pm

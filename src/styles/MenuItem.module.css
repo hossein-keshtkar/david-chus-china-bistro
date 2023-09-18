@@ -1,24 +1,38 @@
-.item {
+.container,
+.background {
+  height: 200px;
+  width: 200px;
+}
+
+.container {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  filter: contrast(120%);
+  scale: 1.03;
+}
+
+.background {
   box-shadow: 0 0 10px 0 #0000006e;
+  background-color: #00000090;
+}
+
+.img {
+  transition: opacity 250ms ease-in-out;
+}
+
+.background {
   background-image: url(../assets/images/menu/A/A.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  transition: all 0.5s ease;
-  height: 200px;
-  width: 200px;
-  cursor: pointer;
 }
 
 .title {
   background: #000000a0;
-  cursor: pointer;
   width: 200px;
-}
-
-.item:hover {
-  filter: contrast(120%);
-  scale: 1.03;
 }
 
 @media (max-width: 767px) {
