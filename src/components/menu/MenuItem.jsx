@@ -37,6 +37,7 @@ const MenuItem = ({ bgImg, img, to, title }) => {
             style={imgStyle}
             rounded
             onLoad={handleLoad}
+            loading="lazy"
           />
           <div
             className={`${styles.title} rounded-bottom position-absolute bottom-0 text-center py-1`}
