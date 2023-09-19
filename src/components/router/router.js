@@ -6,6 +6,7 @@ const Home = lazy(() => import("../home/HomePage"));
 const Login = lazy(() => import("../login/LoginPage"));
 const Menu = lazy(() => import("../menu/MenuPage"));
 const Specials = lazy(() => import("../specials/SpecialsPage"));
+const Products = lazy(() => import("../menu/Products"));
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,11 @@ export const router = createBrowserRouter([
   {
     path: "/menu/specials",
     element: <Specials />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/menu/:id",
+    element: <Products />,
     errorElement: <Error />,
   },
 ]);
