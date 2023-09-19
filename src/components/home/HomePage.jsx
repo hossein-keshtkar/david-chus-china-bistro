@@ -10,11 +10,11 @@ import imgSm from "../../assets/images/jumbotron_768.jpg";
 import blurred from "../../assets/images/blury-resturant.png";
 import LazyImg from "../LazyImg";
 import styles from "../../styles/HomePage.module.css";
+import Page from "../Page";
 
 const Home = () => {
   return (
-    <div>
-      <MyNavbar />
+    <Page>
       <Container className={`${styles.Container} mt-3`}>
         <LazyImg
           blurred={blurred}
@@ -24,8 +24,7 @@ const Home = () => {
         />
         <HomeRow />
       </Container>
-      <Footer />
-    </div>
+    </Page>
   );
 };
 
