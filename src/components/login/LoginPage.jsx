@@ -1,16 +1,13 @@
 import React from "react";
 
-import MyNavbar from "../Navbar";
 import LoginForm from "./LoginForm";
-import Footer from "../Footer";
+import Page from "../Page";
 
 const LoginPage = () => {
   return (
-    <div>
-      <MyNavbar />
+    <Page>
       <LoginForm />
-      <Footer />
-    </div>
+    </Page>
   );
 };
 
