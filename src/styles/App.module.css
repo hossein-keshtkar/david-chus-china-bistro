@@ -13,3 +13,7 @@ body {
   background: #61122f;
   color: #fff;
 }
+
+.App {
+  height: 100vh;
+}
