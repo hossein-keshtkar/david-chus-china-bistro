@@ -7,7 +7,7 @@ import specialsImg from "../../assets/images/specials-tile.jpg";
 import blurredSpecials from "../../assets/images/blurred-specials.png";
 import styles from "../../styles/HomeRow.module.css";
 import Location from "./HomeLocation";
-import LinkItem from "./HomeItem";
+import HomeItem from "./HomeItem";
 
 const HomeRow = () => {
   const menu = process.env.REACT_APP_MENU_API;
@@ -16,14 +16,14 @@ const HomeRow = () => {
   return (
     <Container className="my-5">
       <div className="row d-flex justify-content-center">
-        <LinkItem
+        <HomeItem
           to={menu}
           src={menuImg}
           blurred={blurredMenu}
           alt={"menu"}
           header={"Menu"}
         />
-        <LinkItem
+        <HomeItem
           to={specials}
           src={specialsImg}
           blurred={blurredSpecials}
