@@ -1,15 +1,9 @@
 import React from "react";
-import MyNavbar from "../Navbar";
-import Footer from "../Footer";
+
+import Page from "../Page";
 
 const Specials = () => {
-  return (
-    <div>
-      <MyNavbar />
-      Specials
-      <Footer />
-    </div>
-  );
+  return <Page>Specials</Page>;
 };
 
 export default Specials;
