@@ -1,12 +1,7 @@
-.container,
-.background {
-  height: 200px;
-  width: 200px;
-}
-
 .container {
   cursor: pointer;
   transition: all 0.5s ease;
+  box-shadow: 0 0 10px 0 #0000006e;
 }
 
 .container:hover {
@@ -15,7 +10,6 @@
 }
 
 .background {
-  box-shadow: 0 0 10px 0 #0000006e;
   background-color: #00000090;
 }
 
@@ -31,17 +25,5 @@
 
 .title {
   background: #000000a0;
-  width: 200px;
-}
-
-@media (max-width: 767px) {
-  .container {
-    width: 50%;
-  }
-}
-
-@media (max-width: 479px) {
-  .container {
-    width: 100%;
-  }
+  width: 100%;
 }
