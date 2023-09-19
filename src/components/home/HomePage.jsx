@@ -2,8 +2,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 import HomeRow from "./HomeRow";
-import MyNavbar from "../Navbar";
-import Footer from "../Footer";
 import imgLg from "../../assets/images/jumbotron_1200.jpg";
 import imgMd from "../../assets/images/jumbotron_992.jpg";
 import imgSm from "../../assets/images/jumbotron_768.jpg";
