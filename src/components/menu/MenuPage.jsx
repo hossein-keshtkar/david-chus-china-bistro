@@ -1,15 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-import MyNavbar from "../Navbar";
-import Footer from "../Footer";
 import MenuRows from "./MenuRows";
 import styles from "../../styles/MenuPage.module.css";
+import Page from "../Page";
 
 const Menu = () => {
   return (
-    <div>
-      <MyNavbar />
+    <Page>
       <Container className={styles.Container}>
         <h3 className="text-center mt-5">Menu Categories</h3>
         <p className="text-center">
@@ -18,8 +16,7 @@ const Menu = () => {
         </p>
         <MenuRows />
       </Container>
-      <Footer />
-    </div>
+    </Page>
   );
 };
 
