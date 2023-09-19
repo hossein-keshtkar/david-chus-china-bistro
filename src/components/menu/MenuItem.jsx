@@ -5,15 +5,20 @@ import { Link } from "react-router-dom";
 import styles from "../../styles/MenuItem.module.css";
 import Shimmer from "../Shimmer";
 
-const MenuItem = ({ bgImg, img, to, title }) => {
+const MenuItem = ({ bg, img, title, to, height, width, style }) => {
   const [isImgLoaded, setIsImgLoaded] = useState(false);
 
   const handleLoad = () => {
     setIsImgLoaded(true);
   };
 
+  const size = {
+    height: height && height,
+    width: width && width,
+  };
+
   const bgStyle = {
-    backgroundImage: `url(${bgImg})`,
+    backgroundImage: `url(${bg})`,
   };
 
   const imgStyle = {
@@ -21,33 +26,38 @@ const MenuItem = ({ bgImg, img, to, title }) => {
   };
 
   return (
-    <div className="col-lg-3 col-md-4 d-flex align-items-center justify-content-center">
-      <Link
-        className={`${styles.container} link link-light rounded d-flex justify-content-center my-3`}
-        to={to && to}
+    <Link
+      className={`${styles.container} link link-light rounded d-flex justify-content-center my-3`}
+      style={style}
+      to={to}
+    >
+      <div
+        className="d-flex justify-content-center position-relative"
+        style={size}
       >
-        <div className="d-flex justify-content-center position-relative">
-          <div
-            style={bgStyle}
-            className={`${styles.background} rounded position-absolute z-n1`}
-          />
-          <Image
-            className={styles.img}
-            src={img}
-            style={imgStyle}
-            rounded
-            onLoad={handleLoad}
-            loading="lazy"
-          />
-          <div
-            className={`${styles.title} rounded-bottom position-absolute bottom-0 text-center py-1`}
-          >
-            {title ? title : "?"}
-          </div>
-          {!isImgLoaded && <Shimmer />}
+        <div
+          className={`${styles.background} rounded position-absolute z-n1`}
+          style={{ ...bgStyle, ...size }}
+        />
+        <Image
+          height={height && height}
+          width={width && width}
+          className={styles.img}
+          onLoad={handleLoad}
+          style={imgStyle}
+          loading="lazy"
+          alt={title}
+          src={img}
+          rounded
+        />
+        <div
+          className={`${styles.title} rounded-bottom position-absolute bottom-0 text-center py-1`}
+        >
+          {title ? title : "?"}
         </div>
-      </Link>
-    </div>
+        {!isImgLoaded && <Shimmer />}
+      </div>
+    </Link>
   );
 };
 
