@@ -12,12 +12,12 @@ const MenuRows = () => {
       {menuCategories.map((item) => (
         <div
           className={`${styles.container} col-lg-3 col-md-4 d-flex align-items-center justify-content-center`}
+          key={item.id}
         >
           <MenuItem
             bg={item.bgImg}
             img={item.mainImg}
             title={item.title}
-            key={item.id}
             to={`${menu}/${item.id}`}
             height={200}
             width={200}
