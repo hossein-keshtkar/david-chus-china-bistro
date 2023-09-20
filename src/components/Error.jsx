@@ -1,14 +1,16 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { useRouteError } from "react-router-dom";
+import { Link, useRouteError } from "react-router-dom";
+import Page from "./Page";
 
 const Error = () => {
   return (
-    <Container className="d-flex justify-content-center mt-5">
-      <h1>Opps!</h1>
-      <div>Something went wrong!</div>
-      <code>{useRouteError()}</code>
-    </Container>
+    <Page>
+      <Container className="d-flex flex-column align-items-center justify-content-center my-5">
+        <h1 className="h1 fs-1">404!</h1>
+        <p>Page doesn't exist!</p>
+      </Container>
+    </Page>
   );
 };
 
