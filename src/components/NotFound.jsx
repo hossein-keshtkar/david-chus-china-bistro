@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Link, useRouteError } from "react-router-dom";
+
 import Page from "./Page";
 
-const Error = () => {
+const NotFound = () => {
   return (
     <Page>
       <Container className="d-flex flex-column align-items-center justify-content-center my-5">
@@ -14,4 +14,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default NotFound;

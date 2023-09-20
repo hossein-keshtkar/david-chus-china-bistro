@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
-import Error from "../Error";
 
 const Home = lazy(() => import("../home/HomePage"));
 const Login = lazy(() => import("../login/LoginPage"));
 const Menu = lazy(() => import("../menu/MenuPage"));
 const Specials = lazy(() => import("../specials/SpecialsPage"));
 const Products = lazy(() => import("../menu/Products"));
+const NotFound = lazy(() => import("../NotFound"));
 
 const homeApi = process.env.REACT_APP_HOME_API;
 const loginApi = process.env.REACT_APP_ADMIN_API;
@@ -37,6 +37,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Error />,
+    element: <NotFound />,
   },
 ]);
