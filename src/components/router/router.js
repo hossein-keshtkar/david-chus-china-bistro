@@ -30,11 +30,13 @@ export const router = createBrowserRouter([
   {
     path: specialsApi,
     element: <Specials />,
-    errorElement: <Error />,
   },
   {
     path: productsApi,
     element: <Products />,
-    errorElement: <Error />,
+  },
+  {
+    path: "*",
+    element: <Error />,
   },
 ]);
