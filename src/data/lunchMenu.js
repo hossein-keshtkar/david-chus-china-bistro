@@ -6,6 +6,16 @@ import l1Img from "../assets/images/menu/mainImg/lunch/L1.jpg";
 import l1Bg from "../assets/images/menu/bgImg/lunch/L1.png";
 import l27Img from "../assets/images/menu/mainImg/lunch/L27.jpg";
 import l27Bg from "../assets/images/menu/bgImg/lunch/L27.png";
+import l19Img from "../assets/images/menu/mainImg/lunch/L19.jpg";
+import l19Bg from "../assets/images/menu/bgImg/lunch/L19.png";
+import l8Img from "../assets/images/menu/mainImg/lunch/L8.jpg";
+import l8Bg from "../assets/images/menu/bgImg/lunch/L8.png";
+import l10Img from "../assets/images/menu/mainImg/lunch/L10.jpg";
+import l10Bg from "../assets/images/menu/bgImg/lunch/L10.png";
+import l17Img from "../assets/images/menu/mainImg/lunch/L17.jpg";
+import l17Bg from "../assets/images/menu/bgImg/lunch/L17.png";
+import l15Img from "../assets/images/menu/mainImg/lunch/L15.jpg";
+import l15Bg from "../assets/images/menu/bgImg/lunch/L15.png";
 
 export const lunchMenu = [
   {
@@ -49,6 +59,49 @@ export const lunchMenu = [
         price: "$13.55",
         img: l27Img,
         bg: l27Bg,
+      },
+      {
+        description:
+          "bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce",
+        header: "Hunan Bean Curd",
+        label: "L19",
+        price: "$13.55",
+        img: l19Img,
+        bg: l19Bg,
+      },
+      {
+        description:
+          "white meat chicken, string beans, waterchestnuts, mushrooms, and eggplant, in garlic sauce",
+        header: "Chicken Eggplant with Garlic Sauce",
+        label: "L8",
+        price: "$13.55",
+        img: l8Img,
+        bg: l8Bg,
+      },
+      {
+        description: "white meat chicken sauteed with broccoli in brown sauce",
+        header: "Chicken Broccoli",
+        label: "L10",
+        price: "$13.55",
+        img: l10Img,
+        bg: l10Bg,
+      },
+      {
+        description:
+          "sliced beef sauteed with green peppers and onions in brown sauce",
+        header: "Beef with Green Pepper",
+        label: "L17",
+        price: "$13.55",
+        img: l17Img,
+        bg: l17Bg,
+      },
+      {
+        description: "sliced beef sauteed in garlic sauce",
+        header: "Beef with Garlic Sauce",
+        label: "L15",
+        price: "$13.55",
+        img: l15Img,
+        bg: l15Bg,
       },
     ],
   },
