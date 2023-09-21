@@ -2,17 +2,17 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
-import Page from "../Page";
-import { lunchMenu } from "../../data/lunchMenu";
+import { menuSubCategories } from "../../data/menuSubCategories";
 import ProductsItem from "./ProductsItem";
+import NotFound from "../NotFound";
+import Page from "../Page";
 
 const Products = () => {
   const { id } = useParams();
 
-  const data = lunchMenu.find((item) => item.id === id);
-  const { items } = data;
+  const data = menuSubCategories.find((item) => item.id === id);
 
-  return (
+  return data ? (
     <Page>
       <Container>
         <div className="my-5 text-center">
@@ -20,21 +20,24 @@ const Products = () => {
           <p>{data.paragraph}</p>
         </div>
         <div className="row">
-          {items.map((item, index) => (
-            <div key={index} className="col-lg-6 col-md-12 mb-3">
-              <ProductsItem
-                description={item.description}
-                header={item.header}
-                label={item.label}
-                price={item.price}
-                img={item.img}
-                bg={item.bg}
-              />
-            </div>
-          ))}
+          {data &&
+            data.items.map((item, index) => (
+              <div key={index} className="col-lg-6 col-md-12 mb-3">
+                <ProductsItem
+                  description={item.description}
+                  header={item.header}
+                  label={item.label}
+                  price={item.price}
+                  img={item.img}
+                  bg={item.bg}
+                />
+              </div>
+            ))}
         </div>
       </Container>
     </Page>
+  ) : (
+    <NotFound />
   );
 };
 
