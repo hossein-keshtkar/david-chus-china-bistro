@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import MenuItem from "./MenuItem";
 import { menuCategories } from "../../data/menuCategories";
 import styles from "../../styles/MenuRows.module.css";
+import LazyImage from "../LazyImage";
 
 const MenuRows = () => {
   const menu = process.env.REACT_APP_MENU_API;
@@ -14,14 +15,23 @@ const MenuRows = () => {
           className={`${styles.container} col-lg-3 col-md-4 d-flex align-items-center justify-content-center`}
           key={item.id}
         >
-          <MenuItem
-            bg={item.bgImg}
-            img={item.mainImg}
-            title={item.title}
+          <Link
+            className={`${styles.link} link link-light rounded d-flex justify-content-center my-3`}
             to={`${menu}/${item.id}`}
-            height={200}
-            width={200}
-          />
+          >
+            <LazyImage
+              bg={item.bgImg}
+              img={item.mainImg}
+              height={200}
+              width={200}
+            >
+              <div
+                className={`${styles.title} rounded-bottom position-absolute bottom-0 text-center py-1`}
+              >
+                {item.title ? item.title : "?"}
+              </div>
+            </LazyImage>
+          </Link>
         </div>
       ))}
     </div>
