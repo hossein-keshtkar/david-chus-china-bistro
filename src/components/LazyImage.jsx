@@ -3,8 +3,19 @@ import { Image } from "react-bootstrap";
 
 import styles from "../styles/LazyImage.module.css";
 import Shimmer from "./Shimmer";
+import { LAZY, URL } from "../constants/keywords";
 
-const LazyImage = ({ bg, title, img, children, width, height }) => {
+const LazyImage = ({
+  bg,
+  title,
+  img,
+  children,
+  width,
+  height,
+  style,
+  srcSet,
+  sizes,
+}) => {
   const [isImgLoaded, setIsImgLoaded] = useState(false);
 
   const handleLoad = () => {
@@ -12,7 +23,7 @@ const LazyImage = ({ bg, title, img, children, width, height }) => {
   };
 
   const bgStyle = {
-    backgroundImage: `url(${bg})`,
+    backgroundImage: `${URL}(${bg})`,
   };
 
   const imgStyle = {
@@ -22,7 +33,7 @@ const LazyImage = ({ bg, title, img, children, width, height }) => {
   return (
     <div
       className={`${styles.container} rounded d-flex justify-content-center position-relative`}
-      style={{ height: height, width: width }}
+      style={{ height: height, width: width, ...style }}
     >
       <div
         className={`${styles.background} position-absolute z-n1`}
@@ -30,9 +41,11 @@ const LazyImage = ({ bg, title, img, children, width, height }) => {
       />
       <Image
         className={styles.img}
+        srcSet={srcSet && srcSet}
+        sizes={sizes && sizes}
         onLoad={handleLoad}
         style={imgStyle}
-        loading="lazy"
+        loading={LAZY}
         alt={title}
         src={img}
       />
