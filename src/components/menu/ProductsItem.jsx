@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import LazyImage from "../LazyImage";
 import styles from "../../styles/ProductionItem.module.css";
+import { RESIZE } from "../../constants/keywords";
 
 const ProductsItem = ({ description, header, label, price, img, bg }) => {
   const [windowsWidth, setWindowsWidth] = useState(window.innerWidth);
@@ -12,9 +13,9 @@ const ProductsItem = ({ description, header, label, price, img, bg }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", widthHandler);
+    window.addEventListener(RESIZE, widthHandler);
 
-    return () => window.removeEventListener("resize", widthHandler);
+    return () => window.removeEventListener(RESIZE, widthHandler);
   });
 
   return (
