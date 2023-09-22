@@ -14,7 +14,7 @@ const Products = () => {
 
   return data ? (
     <Page>
-      <Container>
+      <Container className="px-lg-5">
         <div className="my-5 text-center">
           <h3>{data.header}</h3>
           <p>{data.paragraph}</p>
@@ -22,7 +22,7 @@ const Products = () => {
         <div className="row">
           {data &&
             data.items.map((item, index) => (
-              <div key={index} className="col-lg-6 col-md-12 mb-3">
+              <div key={index} className="col-lg-6 col-md-12 mb-4">
                 <ProductsItem
                   description={item.description}
                   header={item.header}
