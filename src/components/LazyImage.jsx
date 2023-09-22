@@ -46,7 +46,7 @@ const LazyImage = ({
         onLoad={handleLoad}
         style={imgStyle}
         loading={LAZY}
-        alt={title}
+        alt={alt}
         src={img}
       />
       {children}
