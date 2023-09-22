@@ -45,16 +45,16 @@ export const menuCategories = [
     mainImg: spImg,
   },
   {
-    title: "SOUP",
-    id: "soup",
-    bgImg: soupBg,
-    mainImg: soupImg,
-  },
-  {
     title: "LUNCH",
     id: "lunch",
     bgImg: lunchBg,
     mainImg: lunchImg,
+  },
+  {
+    title: "SOUP",
+    id: "soup",
+    bgImg: soupBg,
+    mainImg: soupImg,
   },
   {
     title: "APPETIZER",
