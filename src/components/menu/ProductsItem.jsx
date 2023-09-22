@@ -9,7 +9,6 @@ const ProductsItem = ({ description, header, label, price, img, bg }) => {
 
   const widthHandler = () => {
     setWindowsWidth(window.innerWidth);
-    console.log(windowsWidth);
   };
 
   useEffect(() => {
