@@ -1,0 +1,6 @@
+@media (min-width: 768px) {
+  .container {
+    align-items: start !important;
+    border: none !important;
+  }
+}
