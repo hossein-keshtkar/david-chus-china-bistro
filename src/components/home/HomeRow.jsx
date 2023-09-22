@@ -2,10 +2,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 import menuImg from "../../assets/images/menu-tile.jpg";
-import blurredMenu from "../../assets/images/blurred-menu.png";
+import bgMenu from "../../assets/images/blurred-menu.png";
 import specialsImg from "../../assets/images/specials-tile.jpg";
-import blurredSpecials from "../../assets/images/blurred-specials.png";
-import styles from "../../styles/HomeRow.module.css";
+import bgSpecials from "../../assets/images/blurred-specials.png";
 import Location from "./HomeLocation";
 import HomeItem from "./HomeItem";
 
@@ -18,20 +17,21 @@ const HomeRow = () => {
       <div className="row d-flex justify-content-center">
         <HomeItem
           to={menu}
-          src={menuImg}
-          blurred={blurredMenu}
+          img={menuImg}
+          bg={bgMenu}
           alt={"menu"}
           header={"Menu"}
         />
         <HomeItem
           to={specials}
-          src={specialsImg}
-          blurred={blurredSpecials}
+          img={specialsImg}
+          bg={bgSpecials}
           alt={"specials"}
           header={"Specials"}
         />
-        <div className={`${styles.mapContainer} col-lg-4 col-md-12 mb-3`}>
+        <div className="d-flex d-sm-block flex-column align-items-center col-lg-4 col-md-12 mb-3">
           <Location />
+          <h2 className="text-center">Location</h2>
         </div>
       </div>
     </Container>
