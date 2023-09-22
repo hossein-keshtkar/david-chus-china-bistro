@@ -1,45 +1,41 @@
-import React, { useState, memo } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "../../styles/HomeItem.module.css";
 import LazyImage from "../LazyImage";
+import { RESIZE } from "../../constants/keywords";
 
 const HomeItem = ({ to, img, bg, alt, header }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [windowsWidth, setWindowsWidth] = useState(window.innerWidth);
 
-  const style = {
-    opacity: isHovered ? 1 : 0,
+  const className =
+    "d-flex flex-column align-items-center d-sm-block col-lg-4 col-md-6 col-sm-6 col-12 link link-light text-decoration-none text-center";
+
+  const widthHandler = () => {
+    setWindowsWidth(window.innerWidth);
   };
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+  useEffect(() => {
+    window.addEventListener(RESIZE, widthHandler);
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+    return () => window.removeEventListener(RESIZE, widthHandler);
+  }, []);
 
   return (
-    <div className={`${styles.item} col-lg-4 col-md-6 col-sm-6 col-12 mb-3`}>
-      <Link
-        to={to}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <LazyImage
-          img={img}
-          bg={bg}
-          alt={alt}
-          style={{
-            aspectRatio: "36/25",
-          }}
-        />
-        <h1 className={`${styles.description} d-none d-lg-block`} style={style}>
-          {header}
-        </h1>
-      </Link>
-    </div>
+    <Link className={`${styles.container} ${className}`} to={to}>
+      <LazyImage
+        img={img}
+        bg={bg}
+        alt={alt}
+        height={windowsWidth <= 576 && "189px"}
+        width={windowsWidth <= 576 && "272px"}
+        style={{
+          aspectRatio: "36/25",
+        }}
+      />
+      <h2>{header}</h2>
+    </Link>
   );
 };
 
-export default memo(HomeItem);
+export default HomeItem;

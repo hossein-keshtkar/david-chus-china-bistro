@@ -1,23 +1,8 @@
-.item,
-.description {
+.container {
   transition: all 0.5s ease;
 }
 
-.description {
-  position: absolute;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-.item:hover {
-  filter: grayscale(100%);
-  scale: 1.03;
-}
-
-@media (max-width: 576px) {
-  .item {
-    height: 165.6px;
-    width: 300px;
-  }
+.container:hover {
+  filter: contrast(125%);
+  scale: 1.02;
 }
