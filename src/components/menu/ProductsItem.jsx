@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import LazyImage from "../LazyImage";
 import styles from "../../styles/ProductionItem.module.css";
@@ -7,11 +7,21 @@ import { RESIZE } from "../../constants/keywords";
 const ProductsItem = ({ description, header, label, price, img, bg }) => {
   const [windowsWidth, setWindowsWidth] = useState(window.innerWidth);
 
+  const paraRef = useRef();
+
   const widthHandler = () => {
     setWindowsWidth(window.innerWidth);
   };
 
   useEffect(() => {
+    const cost = price.split(" ");
+
+    paraRef.current.innerHTML = `<span>${cost[0]}</span> <sub>${
+      cost[1] ? cost[1] : ""
+    }</sub> <span>${cost[2] ? cost[2] : ""}</span> <sub>${
+      cost[3] ? cost[3] : ""
+    }</sub>`;
+
     window.addEventListener(RESIZE, widthHandler);
 
     return () => window.removeEventListener(RESIZE, widthHandler);
@@ -32,7 +42,7 @@ const ProductsItem = ({ description, header, label, price, img, bg }) => {
             {label}
           </span>
         </LazyImage>
-        <h5 className="mt-1">{price}</h5>
+        <p className="mt-1" ref={paraRef}></p>
       </div>
       <div
         className={`${styles.content} mx-4 ms-md-4 text-center text-md-start`}
