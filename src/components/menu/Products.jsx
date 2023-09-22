@@ -16,7 +16,7 @@ const Products = () => {
     <Page>
       <Container className="px-xl-5">
         <div className="my-5 text-center">
-          <h3>{data.header}</h3>
+          <h1>{data.header}</h1>
           <p>{data.paragraph}</p>
         </div>
         <div className="row">
