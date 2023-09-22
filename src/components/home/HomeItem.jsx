@@ -2,11 +2,11 @@ import React, { useState, memo } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "../../styles/HomeItem.module.css";
-import LazyImg from "../LazyImg";
+import LazyImage from "../LazyImage";
 
-const HomeItem = ({ to, src, blurred, alt, header }) => {
+const HomeItem = ({ to, img, bg, alt, header }) => {
   const [isHovered, setIsHovered] = useState(false);
-  
+
   const style = {
     opacity: isHovered ? 1 : 0,
   };
@@ -26,11 +26,15 @@ const HomeItem = ({ to, src, blurred, alt, header }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <LazyImg src={src} blurred={blurred} alt={alt} />
-        <h1
-          className={`${styles.description} d-none d-lg-block`}
-          style={style}
-        >
+        <LazyImage
+          img={img}
+          bg={bg}
+          alt={alt}
+          style={{
+            aspectRatio: "36/25",
+          }}
+        />
+        <h1 className={`${styles.description} d-none d-lg-block`} style={style}>
           {header}
         </h1>
       </Link>
