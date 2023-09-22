@@ -7,7 +7,7 @@ import { LAZY, URL } from "../constants/keywords";
 
 const LazyImage = ({
   bg,
-  title,
+  alt,
   img,
   children,
   width,

@@ -22,6 +22,7 @@ const MenuRows = () => {
             <LazyImage
               bg={item.bgImg}
               img={item.mainImg}
+              alt={item.title}
               height={200}
               width={200}
             >
