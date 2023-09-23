@@ -3,6 +3,7 @@ import { beefMenu } from "./beefMenu";
 import { chickenMenu } from "./chickenMenu";
 import { chowMeinMenu } from "./chowMeinMenu";
 import { curryMenu } from "./curryMenu";
+import { dessertsMenu } from "./dessertsMenu";
 import { duckMenu } from "./duckMenu";
 import { friedRiceMenu } from "./friedRiceMenu";
 import { loMeinMenu } from "./loMeinMenu";
@@ -32,4 +33,5 @@ export const menuSubCategories = [
   friedRiceMenu,
   chowMeinMenu,
   sideOrdersMenu,
+  dessertsMenu,
 ];
