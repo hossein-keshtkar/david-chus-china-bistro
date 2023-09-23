@@ -25,7 +25,7 @@ import meiFanImg from "../assets/images/menu/mainImg/mei-fan/NF.jpg";
 import panFriedBg from "../assets/images/menu/bgImg/pan-fried/PF.png";
 import panFiredImg from "../assets/images/menu/mainImg/pan-fried/PF.jpg";
 import friedRiceBg from "../assets/images/menu/bgImg/fried-rice/FR.png";
-import firedRiceImg from "../assets/images/menu/mainImg/fired-rice/FR.jpg";
+import firedRiceImg from "../assets/images/menu/mainImg/fried-rice/FR.jpg";
 import chowMeinBg from "../assets/images/menu/bgImg/chow-mein/CM.png";
 import chowMeinImg from "../assets/images/menu/mainImg/chow-mein/CM.jpg";
 import sideOrdersBg from "../assets/images/menu/bgImg/side-orders/SO.png";
