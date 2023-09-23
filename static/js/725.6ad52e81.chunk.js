@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdavid_chus_china_bistro=self.webpackChunkdavid_chus_china_bistro||[]).push([[725],{2725:function(e,s,n){n.r(s);n(2791);var c=n(7022),i=n(8843),t=n(184);s.default=function(){return(0,t.jsx)(i.Z,{children:(0,t.jsxs)(c.Z,{className:"d-flex flex-column align-items-center justify-content-center my-5",children:[(0,t.jsx)("h1",{className:"h1 fs-1",children:"404!"}),(0,t.jsx)("p",{children:"Page doesn't exist!"})]})})}}}]);
+//# sourceMappingURL=725.6ad52e81.chunk.js.map

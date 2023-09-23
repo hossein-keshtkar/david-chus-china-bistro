@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdavid_chus_china_bistro=self.webpackChunkdavid_chus_china_bistro||[]).push([[293],{8293:function(s,e,i){i.r(e);i(2791);var r=i(8843),a=i(7022),n=i(184);e.default=function(){return(0,n.jsx)(r.Z,{children:(0,n.jsxs)(a.Z,{className:"text-center",children:[(0,n.jsx)("h1",{children:"Awards"}),(0,n.jsxs)("p",{children:["David Chu's China Bistro is a recepient of multiple awards for its great food and service.",(0,n.jsx)("br",{}),"Details are coming soon."]})]})})}}}]);
+//# sourceMappingURL=293.b73cc896.chunk.js.map
