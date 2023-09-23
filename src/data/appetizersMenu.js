@@ -34,7 +34,6 @@ import b16Img from "../assets/images/menu/mainImg/appetizer/B16.jpg";
 export const appetizersMenu = {
   id: "appetizer",
   header: "Appetizers Menu",
-  paragraph: "",
   items: [
     {
       description: "eggroll with cabbage, carrots and beef",

@@ -1,6 +1,7 @@
 import { appetizersMenu } from "./appetizersMenu";
 import { beefMenu } from "./beefMenu";
 import { chickenMenu } from "./chickenMenu";
+import { duckMenu } from "./duckMenu";
 import { lunchMenu } from "./lunchMenu";
 import { recommendationsMenu } from "./recommendationsMenu";
 import { soupMenu } from "./soupMenu";
@@ -14,4 +15,5 @@ export const menuSubCategories = [
   chickenMenu,
   beefMenu,
   vealMenu,
+  duckMenu,
 ];

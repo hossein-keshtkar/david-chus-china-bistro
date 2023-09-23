@@ -16,7 +16,6 @@ import v7Img from "../assets/images/menu/mainImg/veal/V7.jpg";
 export const vealMenu = {
   id: "veal",
   header: "Veal Menu",
-  paragraph: "",
   items: [
     {
       description:

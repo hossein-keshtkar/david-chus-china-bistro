@@ -24,7 +24,6 @@ import a11Img from "../assets/images/menu/mainImg/soup/A11.jpg";
 export const soupMenu = {
   id: "soup",
   header: "Soup Menu",
-  paragraph: "",
   items: [
     {
       description:

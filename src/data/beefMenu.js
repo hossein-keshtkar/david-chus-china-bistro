@@ -26,7 +26,6 @@ import f12Img from "../assets/images/menu/mainImg/beef/F12.jpg";
 export const beefMenu = {
   id: "beef",
   header: "Beef Menu",
-  paragraph: "",
   items: [
     {
       description: "sliced beef sauteed with broccoli in brown sauce",
