@@ -30,6 +30,7 @@ const About = () => {
               <a
                 href="https://www.davidchuschinabistro.com/"
                 className="link link-light link-underline-primary"
+                rel="noreferrer"
                 target="_blank"
               >
                 www.davidchuschinabistro.com
