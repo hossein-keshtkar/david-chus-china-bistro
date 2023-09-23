@@ -1,16 +1,21 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
+import About from "../about/About";
 
 const Home = lazy(() => import("../home/HomePage"));
 const Login = lazy(() => import("../login/LoginPage"));
 const Menu = lazy(() => import("../menu/MenuPage"));
 const Products = lazy(() => import("../menu/Products"));
 const NotFound = lazy(() => import("../NotFound"));
+const Awards = lazy(() => import("../awards/Awards"));
 
 const homeApi = process.env.REACT_APP_HOME_API;
 const loginApi = process.env.REACT_APP_ADMIN_API;
 const menuApi = process.env.REACT_APP_MENU_API;
 const productsApi = process.env.REACT_APP_PRODUCT_API;
+const awardsApi = process.env.REACT_APP_AWARDS_API;
+const aboutApi = process.env.REACT_APP_ABOUT_API;
+const notFoundApi = process.env.REACT_APP_NOT_FOUND_API;
 
 export const router = createBrowserRouter([
   {
@@ -30,7 +35,15 @@ export const router = createBrowserRouter([
     element: <Products />,
   },
   {
-    path: "*",
+    path: awardsApi,
+    element: <Awards />,
+  },
+  {
+    path: aboutApi,
+    element: <About />,
+  },
+  {
+    path: notFoundApi,
     element: <NotFound />,
   },
 ]);
