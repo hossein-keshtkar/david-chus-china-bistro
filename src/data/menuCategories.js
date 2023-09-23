@@ -18,7 +18,7 @@ import vegetablesBg from "../assets/images/menu/bgImg/vegetables/VG.png";
 import vegetablesImg from "../assets/images/menu/mainImg/vegetables/VG.jpg";
 import curryBg from "../assets/images/menu/bgImg/curry/CU.png";
 import curryImg from "../assets/images/menu/mainImg/curry/CU.jpg";
-import loMeinBg from "../assets/images/menu/bgImg/lo-main/NL.png";
+import loMeinBg from "../assets/images/menu/bgImg/lo-mein/NL.png";
 import loMeinImg from "../assets/images/menu/mainImg/lo-mein/NL.jpg";
 import meiFanBg from "../assets/images/menu/bgImg/mei-fan/NF.png";
 import meiFanImg from "../assets/images/menu/mainImg/mei-fan/NF.jpg";
