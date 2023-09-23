@@ -9,12 +9,16 @@ import styles from "../styles/Navbar.module.css";
 import PhoneBtn from "./PhoneBtn";
 
 const MyNavbar = () => {
+  const homeApi = process.env.REACT_APP_HOME_API;
+  const menuApi = process.env.REACT_APP_MENU_API;
+  const awardsApi = process.env.REACT_APP_AWARDS_API;
+  const aboutApi = process.env.REACT_APP_ABOUT_API;
   return (
     <>
       <Navbar expand="md" className={`${styles.Navbar}`}>
         <Container>
           <Navbar.Brand className="p-0 m-0">
-            <Link to="/">
+            <Link to={homeApi}>
               <img
                 src={logo}
                 srcSet={`${logo} 1080w, ${logoLg} 1440w`}
@@ -45,23 +49,23 @@ const MyNavbar = () => {
             <Nav className="d-flex justify-content-end align-items-center w-100">
               <Link
                 className="link-dark text-decoration-none d-md-none active"
-                to="/"
+                to={homeApi}
               >
                 <span>Home</span>
               </Link>
               <Link
                 className="link-dark text-decoration-none me-md-2"
-                to="/menu"
+                to={menuApi}
               >
                 <span>Menu</span>
               </Link>
               <Link
                 className="link-dark text-decoration-none me-md-2"
-                to="/about"
+                to={aboutApi}
               >
                 <span>About</span>
               </Link>
-              <Link className="link-dark text-decoration-none" to="/awards">
+              <Link className="link-dark text-decoration-none" to={awardsApi}>
                 <span>Awards</span>
               </Link>
               <Nav.Link
