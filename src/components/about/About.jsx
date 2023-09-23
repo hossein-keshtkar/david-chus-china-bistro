@@ -10,7 +10,10 @@ const About = () => {
         <h1>About This Website</h1>
         <div className="text-start">
           <div className="mb-4">
-            <h4>⚠︎ This is not the offical website</h4>
+            <h4>
+              <span className="text-warning">⚠︎</span> This is not the offical
+              website
+            </h4>
             <h5>This is just an imitation of the original website</h5>
           </div>
           <div>
