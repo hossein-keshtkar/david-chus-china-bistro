@@ -14,6 +14,7 @@ import { panFriedMenu } from "./panFriedMenu";
 import { recommendationsMenu } from "./recommendationsMenu";
 import { sideOrdersMenu } from "./sideOrdersMenu";
 import { soupMenu } from "./soupMenu";
+import { sushiMenu } from "./sushiMenu";
 import { vealMenu } from "./vealMenu";
 import { vegetablesMenu } from "./vegetablesMenu";
 
@@ -36,4 +37,5 @@ export const menuSubCategories = [
   sideOrdersMenu,
   dessertsMenu,
   dinnerComboMenu,
+  sushiMenu,
 ];
