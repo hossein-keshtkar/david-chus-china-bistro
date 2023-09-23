@@ -10,6 +10,7 @@ import { lunchMenu } from "./lunchMenu";
 import { meiFanMenu } from "./meiFanMenu";
 import { panFriedMenu } from "./panFriedMenu";
 import { recommendationsMenu } from "./recommendationsMenu";
+import { sideOrdersMenu } from "./sideOrdersMenu";
 import { soupMenu } from "./soupMenu";
 import { vealMenu } from "./vealMenu";
 import { vegetablesMenu } from "./vegetablesMenu";
@@ -30,4 +31,5 @@ export const menuSubCategories = [
   panFriedMenu,
   friedRiceMenu,
   chowMeinMenu,
+  sideOrdersMenu,
 ];
