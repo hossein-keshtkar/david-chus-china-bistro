@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/5.e356886e.chunk.css","mappings":"AAAA,uBACE,eACF,CAEA,uBACE,cACF","sources":["styles/NotFound.module.css"],"sourcesContent":[".emoji {\n  font-size: 10rem;\n}\n\n.error {\n  font-size: 3rem;\n}\n"],"names":[],"sourceRoot":""}
