@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 const Awards = () => {
   return (
     <Page>
-      <Container className="text-center">
+      <Container className="text-center my-5">
         <h1>Awards</h1>
         <p>
           David Chu's China Bistro is a recepient of multiple awards for its
