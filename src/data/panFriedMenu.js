@@ -10,6 +10,7 @@ import pf4Img from "../assets/images/menu/mainImg/pan-fried/PF4.jpg";
 export const panFriedMenu = {
   id: "pan-fried-noodles",
   header: "Pan Fried Noodles Menu",
+  paragraph: "",
   items: [
     {
       description:

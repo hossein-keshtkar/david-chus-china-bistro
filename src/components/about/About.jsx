@@ -51,7 +51,7 @@ const About = () => {
             </p>
             <p>
               By developing this web application, we just tried to demonstrate
-              our technical skills to whom may it concern and have no other
+              our technical skills to whom it may concern and have no other
               meanings. <br />
               Hopefully, we have achieved our goals, here.
             </p>

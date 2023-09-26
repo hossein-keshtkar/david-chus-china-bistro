@@ -8,6 +8,7 @@ import cu23Img from "../assets/images/menu/mainImg/curry/CU23.jpg";
 export const curryMenu = {
   id: "curry",
   header: "Curry Menu",
+  paragraph: "",
   items: [
     {
       description:

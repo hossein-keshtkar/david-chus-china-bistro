@@ -10,6 +10,7 @@ import fr4Img from "../assets/images/menu/mainImg/fried-rice/FR4.jpg";
 export const friedRiceMenu = {
   id: "fried-rice",
   header: "Mei Fan (Very Fine Noodles) Menu",
+  paragraph: "",
   items: [
     {
       description:

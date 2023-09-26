@@ -10,6 +10,7 @@ import cm4Img from "../assets/images/menu/mainImg/chow-mein/CM4.jpg";
 export const chowMeinMenu = {
   id: "chow-mein",
   header: "Chow Mein Menu",
+  paragraph: "",
   items: [
     {
       description:

@@ -8,6 +8,7 @@ import nl3Img from "../assets/images/menu/mainImg/lo-mein/NL3.jpg";
 export const loMeinMenu = {
   id: "lo-mein",
   header: "Noodles (Lo Mein) Menu",
+  paragraph: "",
   items: [
     {
       description:

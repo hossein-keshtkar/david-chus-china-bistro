@@ -18,6 +18,7 @@ import sp8Img from "../assets/images/menu/mainImg/SP/SP8.jpg";
 export const recommendationsMenu = {
   id: "recommendations",
   header: "Chef's Recommendations Menu",
+  paragraph: "",
   items: [
     {
       description:

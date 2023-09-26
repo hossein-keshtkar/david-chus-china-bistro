@@ -14,6 +14,7 @@ import so6Img from "../assets/images/menu/mainImg/side-orders/SO6.jpg";
 export const sideOrdersMenu = {
   id: "side-orders",
   header: "Side Orders Menu",
+  paragraph: "",
   items: [
     {
       description: "",

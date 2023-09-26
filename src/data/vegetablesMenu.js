@@ -24,6 +24,7 @@ import vg11Img from "../assets/images/menu/mainImg/vegetables/VG11.jpg";
 export const vegetablesMenu = {
   id: "vegetables",
   header: "Vegetables Menu",
+  paragraph: "",
   items: [
     {
       description:

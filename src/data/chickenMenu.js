@@ -40,6 +40,7 @@ import c19Img from "../assets/images/menu/mainImg/chicken/C19.jpg";
 export const chickenMenu = {
   id: "chicken",
   header: "Chicken Menu",
+  paragraph: "",
   items: [
     {
       description:

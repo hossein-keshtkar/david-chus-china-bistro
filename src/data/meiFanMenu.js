@@ -10,6 +10,7 @@ import nf13Img from "../assets/images/menu/mainImg/mei-fan/NF13.jpg";
 export const meiFanMenu = {
   id: "mei-fan",
   header: "Mei Fan (Very Fine Noodles) Menu",
+  paragraph: "",
   items: [
     {
       description:

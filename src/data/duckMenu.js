@@ -8,6 +8,7 @@ import dk3Img from "../assets/images/menu/mainImg/duck/DK3.jpg";
 export const duckMenu = {
   id: "duck",
   header: "Duck Menu",
+  paragraph: "",
   items: [
     {
       description:

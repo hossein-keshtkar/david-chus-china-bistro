@@ -6,6 +6,7 @@ import ds2Img from "../assets/images/menu/mainImg/desserts/DS2.jpg";
 export const dessertsMenu = {
   id: "desserts",
   header: "Desserts Menu",
+  paragraph: "",
   items: [
     {
       description:
