@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-import menuImg from "../../assets/images/menu-tile.jpg";
+import menuImg from "../../assets/images/menu-tile_1.avif";
 import bgMenu from "../../assets/images/blurred-menu.png";
-import specialsImg from "../../assets/images/specials-tile.jpg";
+import specialsImg from "../../assets/images/specials-tile.avif";
 import bgSpecials from "../../assets/images/blurred-specials.png";
 import Location from "./HomeLocation";
 import HomeItem from "./HomeItem";
