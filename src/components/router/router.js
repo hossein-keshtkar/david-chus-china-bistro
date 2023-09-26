@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { lazy } from "react";
 
 const Home = lazy(() => import("../home/HomePage"));
@@ -44,6 +44,6 @@ const routes = [
   },
 ];
 
-export const router = createBrowserRouter(routes, {
+export const router = createHashRouter(routes, {
   basename: homeApi,
 });
