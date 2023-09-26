@@ -9,21 +9,21 @@ import Location from "./HomeLocation";
 import HomeItem from "./HomeItem";
 
 const HomeRow = () => {
-  const menu = process.env.REACT_APP_MENU_API;
-  const specials = process.env.REACT_APP_SPECIALS_API;
+  const menuApi = process.env.REACT_APP_MENU_API;
+  const specialsApi = process.env.REACT_APP_SPECIALS_API;
 
   return (
     <Container className="my-5">
       <div className="row d-flex justify-content-center">
         <HomeItem
-          to={menu}
+          to={menuApi}
           img={menuImg}
           bg={bgMenu}
           alt={"menu"}
           header={"Menu"}
         />
         <HomeItem
-          to={specials}
+          to={specialsApi}
           img={specialsImg}
           bg={bgSpecials}
           alt={"specials"}
