@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/david-chus-china-bistro/static/css/main.5e1b38ba.css",
-    "main.js": "/david-chus-china-bistro/static/js/main.90c71d09.js",
+    "main.js": "/david-chus-china-bistro/static/js/main.962d06e4.js",
     "static/css/939.eb7a3925.chunk.css": "/david-chus-china-bistro/static/css/939.eb7a3925.chunk.css",
     "static/js/939.9f662823.chunk.js": "/david-chus-china-bistro/static/js/939.9f662823.chunk.js",
     "static/css/449.57030ae0.chunk.css": "/david-chus-china-bistro/static/css/449.57030ae0.chunk.css",
@@ -9,15 +9,15 @@
     "static/css/297.8c13f981.chunk.css": "/david-chus-china-bistro/static/css/297.8c13f981.chunk.css",
     "static/js/297.ffdb10e2.chunk.js": "/david-chus-china-bistro/static/js/297.ffdb10e2.chunk.js",
     "static/css/246.654a1fcc.chunk.css": "/david-chus-china-bistro/static/css/246.654a1fcc.chunk.css",
-    "static/js/246.67db02e6.chunk.js": "/david-chus-china-bistro/static/js/246.67db02e6.chunk.js",
+    "static/js/246.8a0b822c.chunk.js": "/david-chus-china-bistro/static/js/246.8a0b822c.chunk.js",
     "static/css/827.e17a7115.chunk.css": "/david-chus-china-bistro/static/css/827.e17a7115.chunk.css",
-    "static/js/827.599cad15.chunk.js": "/david-chus-china-bistro/static/js/827.599cad15.chunk.js",
+    "static/js/827.8bc12fd8.chunk.js": "/david-chus-china-bistro/static/js/827.8bc12fd8.chunk.js",
     "static/css/143.57030ae0.chunk.css": "/david-chus-china-bistro/static/css/143.57030ae0.chunk.css",
     "static/js/143.8251b2be.chunk.js": "/david-chus-china-bistro/static/js/143.8251b2be.chunk.js",
     "static/css/836.57030ae0.chunk.css": "/david-chus-china-bistro/static/css/836.57030ae0.chunk.css",
     "static/js/836.0f7fc833.chunk.js": "/david-chus-china-bistro/static/js/836.0f7fc833.chunk.js",
     "static/js/731.f59a327c.chunk.js": "/david-chus-china-bistro/static/js/731.f59a327c.chunk.js",
-    "static/js/412.da7c9ac2.chunk.js": "/david-chus-china-bistro/static/js/412.da7c9ac2.chunk.js",
+    "static/js/412.119ed222.chunk.js": "/david-chus-china-bistro/static/js/412.119ed222.chunk.js",
     "static/media/jumbotron_1200.jpg": "/david-chus-china-bistro/static/media/jumbotron_1200.0af1635fdc823dc1f1ad.jpg",
     "static/media/jumbotron_992.jpg": "/david-chus-china-bistro/static/media/jumbotron_992.ce7f1ad5d19f832e3ae9.jpg",
     "static/media/menu-tile.jpg": "/david-chus-china-bistro/static/media/menu-tile.930ab899af6f45748c40.jpg",
@@ -224,7 +224,7 @@
     "static/media/glyphicons-halflings-regular.woff2": "/david-chus-china-bistro/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
     "index.html": "/david-chus-china-bistro/index.html",
     "main.5e1b38ba.css.map": "/david-chus-china-bistro/static/css/main.5e1b38ba.css.map",
-    "main.90c71d09.js.map": "/david-chus-china-bistro/static/js/main.90c71d09.js.map",
+    "main.962d06e4.js.map": "/david-chus-china-bistro/static/js/main.962d06e4.js.map",
     "939.eb7a3925.chunk.css.map": "/david-chus-china-bistro/static/css/939.eb7a3925.chunk.css.map",
     "939.9f662823.chunk.js.map": "/david-chus-china-bistro/static/js/939.9f662823.chunk.js.map",
     "449.57030ae0.chunk.css.map": "/david-chus-china-bistro/static/css/449.57030ae0.chunk.css.map",
@@ -232,18 +232,18 @@
     "297.8c13f981.chunk.css.map": "/david-chus-china-bistro/static/css/297.8c13f981.chunk.css.map",
     "297.ffdb10e2.chunk.js.map": "/david-chus-china-bistro/static/js/297.ffdb10e2.chunk.js.map",
     "246.654a1fcc.chunk.css.map": "/david-chus-china-bistro/static/css/246.654a1fcc.chunk.css.map",
-    "246.67db02e6.chunk.js.map": "/david-chus-china-bistro/static/js/246.67db02e6.chunk.js.map",
+    "246.8a0b822c.chunk.js.map": "/david-chus-china-bistro/static/js/246.8a0b822c.chunk.js.map",
     "827.e17a7115.chunk.css.map": "/david-chus-china-bistro/static/css/827.e17a7115.chunk.css.map",
-    "827.599cad15.chunk.js.map": "/david-chus-china-bistro/static/js/827.599cad15.chunk.js.map",
+    "827.8bc12fd8.chunk.js.map": "/david-chus-china-bistro/static/js/827.8bc12fd8.chunk.js.map",
     "143.57030ae0.chunk.css.map": "/david-chus-china-bistro/static/css/143.57030ae0.chunk.css.map",
     "143.8251b2be.chunk.js.map": "/david-chus-china-bistro/static/js/143.8251b2be.chunk.js.map",
     "836.57030ae0.chunk.css.map": "/david-chus-china-bistro/static/css/836.57030ae0.chunk.css.map",
     "836.0f7fc833.chunk.js.map": "/david-chus-china-bistro/static/js/836.0f7fc833.chunk.js.map",
     "731.f59a327c.chunk.js.map": "/david-chus-china-bistro/static/js/731.f59a327c.chunk.js.map",
-    "412.da7c9ac2.chunk.js.map": "/david-chus-china-bistro/static/js/412.da7c9ac2.chunk.js.map"
+    "412.119ed222.chunk.js.map": "/david-chus-china-bistro/static/js/412.119ed222.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e1b38ba.css",
-    "static/js/main.90c71d09.js"
+    "static/js/main.962d06e4.js"
   ]
 }
