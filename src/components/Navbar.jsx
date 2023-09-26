@@ -13,6 +13,7 @@ const MyNavbar = () => {
   const menuApi = process.env.REACT_APP_MENU_API;
   const awardsApi = process.env.REACT_APP_AWARDS_API;
   const aboutApi = process.env.REACT_APP_ABOUT_API;
+
   return (
     <>
       <Navbar expand="md" className={`${styles.Navbar}`}>
@@ -30,7 +31,7 @@ const MyNavbar = () => {
           </Navbar.Brand>
 
           <Container className="d-flex flex-column w-100">
-            <h1 className={`${styles.navbarHeader} col-lg-7`}>
+            <h1 className={`${styles.navbarHeader}`}>
               DAVID CHU'S CHINA BISTRO
             </h1>
             <div>

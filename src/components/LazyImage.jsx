@@ -15,6 +15,7 @@ const LazyImage = ({
   style,
   srcSet,
   sizes,
+  loading,
 }) => {
   const [isImgLoaded, setIsImgLoaded] = useState(false);
 
@@ -45,7 +46,7 @@ const LazyImage = ({
         sizes={sizes && sizes}
         onLoad={handleLoad}
         style={imgStyle}
-        loading={LAZY}
+        loading={loading ? loading : LAZY}
         alt={alt}
         src={img}
       />
