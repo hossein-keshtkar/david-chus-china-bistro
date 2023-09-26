@@ -14,13 +14,13 @@ const Footer = () => {
       <Container>
         <div className={`${styles.columns} row text-center text-md-start`}>
           <div className="col-md-4 col-sm-12 p-md-5 px-md-3 p-4">
-            <h4>Hours:</h4>
+            <strong>Hours:</strong>
             <div>Sun-Thurs: 11:15am - 10:00pm</div>
             <div className="mt-3 mb-3">Fri: 11:15am - 2:30pm</div>
             <div>Saturday Closed</div>
           </div>
           <div className="col-md-4 col-sm-12 p-md-5 px-md-3 p-4">
-            <h4>Address:</h4>
+            <strong>Address:</strong>
             <div>7105 Reisterstown Road</div>
             <div className="mt-3 mb-3">Baltimore, MD 21215</div>
             <div className={styles.delivery}>

@@ -23,6 +23,7 @@ const Home = () => {
           loading={"eager"}
           width={"100%"}
           height={"auto"}
+          alt={"restaurant"}
         />
         <HomeRow />
       </Container>
